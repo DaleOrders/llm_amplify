@@ -1,3 +1,7 @@
+# keep audio folder but  else in audio
+**/audio/*
+!**/audio/README.md
+
 *.env
 credentials.py
 

@@ -1,0 +1,1912 @@
+{
+    "eExam.01": {
+        "Definition": "The patient's body weight in kilograms either measured or estimated.",
+        "Code": []
+    },
+    "eExam.02": {
+        "Definition": "The length-based color as taken from the tape.",
+        "Code": [
+            {
+                "Code": "3502001",
+                "CodeDescription": "Blue"
+            },
+            {
+                "Code": "3502003",
+                "CodeDescription": "Green"
+            },
+            {
+                "Code": "3502005",
+                "CodeDescription": "Grey"
+            },
+            {
+                "Code": "3502007",
+                "CodeDescription": "Orange"
+            },
+            {
+                "Code": "3502009",
+                "CodeDescription": "Pink"
+            },
+            {
+                "Code": "3502011",
+                "CodeDescription": "Purple"
+            },
+            {
+                "Code": "3502013",
+                "CodeDescription": "Red"
+            },
+            {
+                "Code": "3502015",
+                "CodeDescription": "White"
+            },
+            {
+                "Code": "3502017",
+                "CodeDescription": "Yellow"
+            }
+        ]
+    },
+    "eExam.03": {
+        "Definition": "The date/time of the assessment.",
+        "Code": []
+    },
+    "eExam.04": {
+        "Definition": "The assessment findings associated with the patient's skin.",
+        "Code": [
+            {
+                "Code": "3504001",
+                "CodeDescription": "Clammy"
+            },
+            {
+                "Code": "3504003",
+                "CodeDescription": "Cold"
+            },
+            {
+                "Code": "3504005",
+                "CodeDescription": "Cyanotic"
+            },
+            {
+                "Code": "3504007",
+                "CodeDescription": "Diaphoretic"
+            },
+            {
+                "Code": "3504009",
+                "CodeDescription": "Dry"
+            },
+            {
+                "Code": "3504011",
+                "CodeDescription": "Flushed"
+            },
+            {
+                "Code": "3504013",
+                "CodeDescription": "Hot"
+            },
+            {
+                "Code": "3504015",
+                "CodeDescription": "Jaundiced"
+            },
+            {
+                "Code": "3504017",
+                "CodeDescription": "Lividity"
+            },
+            {
+                "Code": "3504019",
+                "CodeDescription": "Mottled"
+            },
+            {
+                "Code": "3504021",
+                "CodeDescription": "Normal"
+            },
+            {
+                "Code": "3504023",
+                "CodeDescription": "Not Done"
+            },
+            {
+                "Code": "3504025",
+                "CodeDescription": "Pale"
+            },
+            {
+                "Code": "3504027",
+                "CodeDescription": "Poor Turgor"
+            },
+            {
+                "Code": "3504029",
+                "CodeDescription": "Red (Erythematous)"
+            },
+            {
+                "Code": "3504031",
+                "CodeDescription": "Tenting"
+            },
+            {
+                "Code": "3504033",
+                "CodeDescription": "Warm"
+            },
+            {
+                "Code": "3504035",
+                "CodeDescription": "Capillary Nail Bed Refill less than 2 seconds"
+            },
+            {
+                "Code": "3504037",
+                "CodeDescription": "Capillary Nail Bed Refill 2-4 seconds"
+            },
+            {
+                "Code": "3504039",
+                "CodeDescription": "Capillary Nail Bed Refill more than 4 seconds"
+            }
+        ]
+    },
+    "eExam.05": {
+        "Definition": "The assessment findings associated with the patient's head.",
+        "Code": [
+            {
+                "Code": "3505001",
+                "CodeDescription": "Abrasion"
+            },
+            {
+                "Code": "3505003",
+                "CodeDescription": "Avulsion"
+            },
+            {
+                "Code": "3505005",
+                "CodeDescription": "Bleeding Controlled"
+            },
+            {
+                "Code": "3505007",
+                "CodeDescription": "Bleeding Uncontrolled"
+            },
+            {
+                "Code": "3505009",
+                "CodeDescription": "Burn-Blistering"
+            },
+            {
+                "Code": "3505011",
+                "CodeDescription": "Burn-Charring"
+            },
+            {
+                "Code": "3505013",
+                "CodeDescription": "Burn-Redness"
+            },
+            {
+                "Code": "3505015",
+                "CodeDescription": "Burn-White/Waxy"
+            },
+            {
+                "Code": "3505017",
+                "CodeDescription": "Decapitation"
+            },
+            {
+                "Code": "3505019",
+                "CodeDescription": "Deformity"
+            },
+            {
+                "Code": "3505021",
+                "CodeDescription": "Drainage"
+            },
+            {
+                "Code": "3505023",
+                "CodeDescription": "Foreign Body"
+            },
+            {
+                "Code": "3505029",
+                "CodeDescription": "Laceration"
+            },
+            {
+                "Code": "3505031",
+                "CodeDescription": "Mass/Lesion"
+            },
+            {
+                "Code": "3505033",
+                "CodeDescription": "Normal"
+            },
+            {
+                "Code": "3505035",
+                "CodeDescription": "Not Done"
+            },
+            {
+                "Code": "3505037",
+                "CodeDescription": "Pain"
+            },
+            {
+                "Code": "3505039",
+                "CodeDescription": "Puncture/Stab Wound"
+            },
+            {
+                "Code": "3505045",
+                "CodeDescription": "Gunshot Wound"
+            },
+            {
+                "Code": "3505047",
+                "CodeDescription": "Crush Injury"
+            },
+            {
+                "Code": "3505049",
+                "CodeDescription": "Swelling"
+            },
+            {
+                "Code": "3505051",
+                "CodeDescription": "Contusion"
+            },
+            {
+                "Code": "3505053",
+                "CodeDescription": "Tenderness"
+            }
+        ]
+    },
+    "eExam.06": {
+        "Definition": "The assessment findings associated with the patient's face.",
+        "Code": [
+            {
+                "Code": "3506001",
+                "CodeDescription": "Abrasion"
+            },
+            {
+                "Code": "3506003",
+                "CodeDescription": "Asymmetric Smile or Droop"
+            },
+            {
+                "Code": "3506005",
+                "CodeDescription": "Avulsion"
+            },
+            {
+                "Code": "3506007",
+                "CodeDescription": "Bleeding Controlled"
+            },
+            {
+                "Code": "3506009",
+                "CodeDescription": "Bleeding Uncontrolled"
+            },
+            {
+                "Code": "3506011",
+                "CodeDescription": "Burn-Blistering"
+            },
+            {
+                "Code": "3506013",
+                "CodeDescription": "Burn-Charring"
+            },
+            {
+                "Code": "3506015",
+                "CodeDescription": "Burn-Redness"
+            },
+            {
+                "Code": "3506017",
+                "CodeDescription": "Burn-White/Waxy"
+            },
+            {
+                "Code": "3506021",
+                "CodeDescription": "Deformity"
+            },
+            {
+                "Code": "3506023",
+                "CodeDescription": "Drainage"
+            },
+            {
+                "Code": "3506025",
+                "CodeDescription": "Foreign Body"
+            },
+            {
+                "Code": "3506031",
+                "CodeDescription": "Laceration"
+            },
+            {
+                "Code": "3506033",
+                "CodeDescription": "Mass/Lesion"
+            },
+            {
+                "Code": "3506035",
+                "CodeDescription": "Normal"
+            },
+            {
+                "Code": "3506037",
+                "CodeDescription": "Not Done"
+            },
+            {
+                "Code": "3506039",
+                "CodeDescription": "Pain"
+            },
+            {
+                "Code": "3506041",
+                "CodeDescription": "Puncture/Stab Wound"
+            },
+            {
+                "Code": "3506047",
+                "CodeDescription": "Gunshot Wound"
+            },
+            {
+                "Code": "3506049",
+                "CodeDescription": "Crush Injury"
+            },
+            {
+                "Code": "3506051",
+                "CodeDescription": "Tenderness"
+            },
+            {
+                "Code": "3506053",
+                "CodeDescription": "Swelling"
+            },
+            {
+                "Code": "3506055",
+                "CodeDescription": "Contusion"
+            }
+        ]
+    },
+    "eExam.07": {
+        "Definition": "The assessment findings associated with the patient's neck.",
+        "Code": [
+            {
+                "Code": "3507001",
+                "CodeDescription": "Abrasion"
+            },
+            {
+                "Code": "3507003",
+                "CodeDescription": "Avulsion"
+            },
+            {
+                "Code": "3507005",
+                "CodeDescription": "Bleeding Controlled"
+            },
+            {
+                "Code": "3507007",
+                "CodeDescription": "Bleeding Uncontrolled"
+            },
+            {
+                "Code": "3507009",
+                "CodeDescription": "Burn-Blistering"
+            },
+            {
+                "Code": "3507011",
+                "CodeDescription": "Burn-Charring"
+            },
+            {
+                "Code": "3507013",
+                "CodeDescription": "Burn-Redness"
+            },
+            {
+                "Code": "3507015",
+                "CodeDescription": "Burn-White/Waxy"
+            },
+            {
+                "Code": "3507017",
+                "CodeDescription": "Decapitation"
+            },
+            {
+                "Code": "3507019",
+                "CodeDescription": "Foreign Body"
+            },
+            {
+                "Code": "3507025",
+                "CodeDescription": "JVD"
+            },
+            {
+                "Code": "3507027",
+                "CodeDescription": "Laceration"
+            },
+            {
+                "Code": "3507029",
+                "CodeDescription": "Normal"
+            },
+            {
+                "Code": "3507031",
+                "CodeDescription": "Not Done"
+            },
+            {
+                "Code": "3507033",
+                "CodeDescription": "Pain"
+            },
+            {
+                "Code": "3507035",
+                "CodeDescription": "Puncture/Stab Wound"
+            },
+            {
+                "Code": "3507037",
+                "CodeDescription": "Stridor"
+            },
+            {
+                "Code": "3507039",
+                "CodeDescription": "Subcutaneous Air"
+            },
+            {
+                "Code": "3507045",
+                "CodeDescription": "Tracheal Deviation-Left"
+            },
+            {
+                "Code": "3507047",
+                "CodeDescription": "Tracheal Deviation-Right"
+            },
+            {
+                "Code": "3507049",
+                "CodeDescription": "Gunshot Wound"
+            },
+            {
+                "Code": "3507051",
+                "CodeDescription": "Crush Injury"
+            },
+            {
+                "Code": "3507053",
+                "CodeDescription": "Swelling"
+            },
+            {
+                "Code": "3507055",
+                "CodeDescription": "Contusion"
+            },
+            {
+                "Code": "3507057",
+                "CodeDescription": "Deformity"
+            },
+            {
+                "Code": "3507059",
+                "CodeDescription": "Tenderness"
+            }
+        ]
+    },
+    "eExam.09": {
+        "Definition": "The assessment findings associated with the patient's heart.",
+        "Code": [
+            {
+                "Code": "3509001",
+                "CodeDescription": "Clicks"
+            },
+            {
+                "Code": "3509003",
+                "CodeDescription": "Heart Sounds Decreased"
+            },
+            {
+                "Code": "3509005",
+                "CodeDescription": "Murmur-Diastolic"
+            },
+            {
+                "Code": "3509007",
+                "CodeDescription": "Murmur-Systolic"
+            },
+            {
+                "Code": "3509009",
+                "CodeDescription": "Normal"
+            },
+            {
+                "Code": "3509011",
+                "CodeDescription": "Not Done"
+            },
+            {
+                "Code": "3509013",
+                "CodeDescription": "Rubs"
+            },
+            {
+                "Code": "3509015",
+                "CodeDescription": "S1"
+            },
+            {
+                "Code": "3509017",
+                "CodeDescription": "S2"
+            },
+            {
+                "Code": "3509019",
+                "CodeDescription": "S3"
+            },
+            {
+                "Code": "3509021",
+                "CodeDescription": "S4"
+            }
+        ]
+    },
+    "eExam.10": {
+        "Definition": "The location of the patient's abdomen assessment findings.",
+        "Code": [
+            {
+                "Code": "3510001",
+                "CodeDescription": "Generalized"
+            },
+            {
+                "Code": "3510003",
+                "CodeDescription": "Left Lower Quadrant"
+            },
+            {
+                "Code": "3510005",
+                "CodeDescription": "Left Upper Quadrant"
+            },
+            {
+                "Code": "3510007",
+                "CodeDescription": "Periumbilical"
+            },
+            {
+                "Code": "3510009",
+                "CodeDescription": "Right Lower Quadrant"
+            },
+            {
+                "Code": "3510011",
+                "CodeDescription": "Right Upper Quadrant"
+            },
+            {
+                "Code": "3510013",
+                "CodeDescription": "Epigastric"
+            }
+        ]
+    },
+    "eExam.11": {
+        "Definition": "The assessment findings associated with the patient's abdomen.",
+        "Code": [
+            {
+                "Code": "3511001",
+                "CodeDescription": "Abrasion"
+            },
+            {
+                "Code": "3511003",
+                "CodeDescription": "Avulsion"
+            },
+            {
+                "Code": "3511005",
+                "CodeDescription": "Bleeding Controlled"
+            },
+            {
+                "Code": "3511007",
+                "CodeDescription": "Bleeding Uncontrolled"
+            },
+            {
+                "Code": "3511009",
+                "CodeDescription": "Bowel Sounds-Absent"
+            },
+            {
+                "Code": "3511011",
+                "CodeDescription": "Bowel Sounds-Present"
+            },
+            {
+                "Code": "3511013",
+                "CodeDescription": "Burn-Blistering"
+            },
+            {
+                "Code": "3511015",
+                "CodeDescription": "Burn-Charring"
+            },
+            {
+                "Code": "3511017",
+                "CodeDescription": "Burn-Redness"
+            },
+            {
+                "Code": "3511019",
+                "CodeDescription": "Burn-White/Waxy"
+            },
+            {
+                "Code": "3511021",
+                "CodeDescription": "Distention"
+            },
+            {
+                "Code": "3511023",
+                "CodeDescription": "Foreign Body"
+            },
+            {
+                "Code": "3511025",
+                "CodeDescription": "Guarding"
+            },
+            {
+                "Code": "3511031",
+                "CodeDescription": "Laceration"
+            },
+            {
+                "Code": "3511033",
+                "CodeDescription": "Mass/Lesion"
+            },
+            {
+                "Code": "3511035",
+                "CodeDescription": "Mass-Pulsating"
+            },
+            {
+                "Code": "3511037",
+                "CodeDescription": "Normal"
+            },
+            {
+                "Code": "3511039",
+                "CodeDescription": "Not Done"
+            },
+            {
+                "Code": "3511041",
+                "CodeDescription": "Pain"
+            },
+            {
+                "Code": "3511043",
+                "CodeDescription": "Pregnant-Palpable Uterus"
+            },
+            {
+                "Code": "3511045",
+                "CodeDescription": "Puncture/Stab Wound"
+            },
+            {
+                "Code": "3511051",
+                "CodeDescription": "Tenderness"
+            },
+            {
+                "Code": "3511053",
+                "CodeDescription": "Gunshot Wound"
+            },
+            {
+                "Code": "3511055",
+                "CodeDescription": "Crush Injury"
+            },
+            {
+                "Code": "3511057",
+                "CodeDescription": "Swelling"
+            },
+            {
+                "Code": "3511059",
+                "CodeDescription": "Contusion"
+            },
+            {
+                "Code": "3511061",
+                "CodeDescription": "Deformity"
+            },
+            {
+                "Code": "3511063",
+                "CodeDescription": "Rebound Tenderness"
+            },
+            {
+                "Code": "3511065",
+                "CodeDescription": "Rigidity"
+            }
+        ]
+    },
+    "eExam.12": {
+        "Definition": "The assessment findings associated with the patient's pelvis/genitourinary.",
+        "Code": [
+            {
+                "Code": "3512001",
+                "CodeDescription": "Abrasion"
+            },
+            {
+                "Code": "3512003",
+                "CodeDescription": "Avulsion"
+            },
+            {
+                "Code": "3512005",
+                "CodeDescription": "Bleeding Controlled"
+            },
+            {
+                "Code": "3512007",
+                "CodeDescription": "Bleeding Uncontrolled"
+            },
+            {
+                "Code": "3512009",
+                "CodeDescription": "Bleeding-Rectal"
+            },
+            {
+                "Code": "3512011",
+                "CodeDescription": "Bleeding-Urethral"
+            },
+            {
+                "Code": "3512013",
+                "CodeDescription": "Bleeding-Vaginal"
+            },
+            {
+                "Code": "3512015",
+                "CodeDescription": "Burn-Blistering"
+            },
+            {
+                "Code": "3512017",
+                "CodeDescription": "Burn-Charring"
+            },
+            {
+                "Code": "3512019",
+                "CodeDescription": "Burn-Redness"
+            },
+            {
+                "Code": "3512021",
+                "CodeDescription": "Burn-White/Waxy"
+            },
+            {
+                "Code": "3512023",
+                "CodeDescription": "Deformity"
+            },
+            {
+                "Code": "3512025",
+                "CodeDescription": "Foreign Body"
+            },
+            {
+                "Code": "3512027",
+                "CodeDescription": "Genital Injury"
+            },
+            {
+                "Code": "3512033",
+                "CodeDescription": "Laceration"
+            },
+            {
+                "Code": "3512035",
+                "CodeDescription": "Mass/Lesion"
+            },
+            {
+                "Code": "3512037",
+                "CodeDescription": "Normal"
+            },
+            {
+                "Code": "3512039",
+                "CodeDescription": "Not Done"
+            },
+            {
+                "Code": "3512041",
+                "CodeDescription": "Pain"
+            },
+            {
+                "Code": "3512043",
+                "CodeDescription": "Pelvic Fracture"
+            },
+            {
+                "Code": "3512045",
+                "CodeDescription": "Pelvic Instability"
+            },
+            {
+                "Code": "3512047",
+                "CodeDescription": "Penile Priapism/Erection"
+            },
+            {
+                "Code": "3512049",
+                "CodeDescription": "Pregnant-Crowning"
+            },
+            {
+                "Code": "3512051",
+                "CodeDescription": "Puncture/Stab Wound"
+            },
+            {
+                "Code": "3512057",
+                "CodeDescription": "Tenderness"
+            },
+            {
+                "Code": "3512059",
+                "CodeDescription": "Gunshot Wound"
+            },
+            {
+                "Code": "3512061",
+                "CodeDescription": "Crush Injury"
+            },
+            {
+                "Code": "3512063",
+                "CodeDescription": "Swelling"
+            },
+            {
+                "Code": "3512065",
+                "CodeDescription": "Contusion"
+            }
+        ]
+    },
+    "eExam.13": {
+        "Definition": "The location of the patient's back and spine assessment findings.",
+        "Code": [
+            {
+                "Code": "3513001",
+                "CodeDescription": "Back-General"
+            },
+            {
+                "Code": "3513003",
+                "CodeDescription": "Cervical-Left"
+            },
+            {
+                "Code": "3513005",
+                "CodeDescription": "Cervical-Midline"
+            },
+            {
+                "Code": "3513007",
+                "CodeDescription": "Cervical-Right"
+            },
+            {
+                "Code": "3513009",
+                "CodeDescription": "Lumbar-Left"
+            },
+            {
+                "Code": "3513011",
+                "CodeDescription": "Lumbar-Midline"
+            },
+            {
+                "Code": "3513013",
+                "CodeDescription": "Lumbar-Right"
+            },
+            {
+                "Code": "3513015",
+                "CodeDescription": "Thoracic-Left"
+            },
+            {
+                "Code": "3513017",
+                "CodeDescription": "Thoracic-Midline"
+            },
+            {
+                "Code": "3513019",
+                "CodeDescription": "Thoracic-Right"
+            },
+            {
+                "Code": "3513021",
+                "CodeDescription": "Sacral-Left"
+            },
+            {
+                "Code": "3513023",
+                "CodeDescription": "Sacral-Midline"
+            },
+            {
+                "Code": "3513025",
+                "CodeDescription": "Sacral-Right"
+            }
+        ]
+    },
+    "eExam.14": {
+        "Definition": "The assessment findings associated with the patient's spine (Cervical, Thoracic, Lumbar, and Sacral) and back exam.",
+        "Code": [
+            {
+                "Code": "3514001",
+                "CodeDescription": "Abrasion"
+            },
+            {
+                "Code": "3514003",
+                "CodeDescription": "Avulsion"
+            },
+            {
+                "Code": "3514005",
+                "CodeDescription": "Bleeding Controlled"
+            },
+            {
+                "Code": "3514007",
+                "CodeDescription": "Bleeding Uncontrolled"
+            },
+            {
+                "Code": "3514009",
+                "CodeDescription": "Burn-Blistering"
+            },
+            {
+                "Code": "3514011",
+                "CodeDescription": "Burn-Charring"
+            },
+            {
+                "Code": "3514013",
+                "CodeDescription": "Burn-Redness"
+            },
+            {
+                "Code": "3514015",
+                "CodeDescription": "Burn-White/Waxy"
+            },
+            {
+                "Code": "3514017",
+                "CodeDescription": "Deformity"
+            },
+            {
+                "Code": "3514019",
+                "CodeDescription": "Foreign Body"
+            },
+            {
+                "Code": "3514025",
+                "CodeDescription": "Laceration"
+            },
+            {
+                "Code": "3514027",
+                "CodeDescription": "Normal"
+            },
+            {
+                "Code": "3514029",
+                "CodeDescription": "Not Done"
+            },
+            {
+                "Code": "3514031",
+                "CodeDescription": "Pain"
+            },
+            {
+                "Code": "3514033",
+                "CodeDescription": "Pain with Range of Motion"
+            },
+            {
+                "Code": "3514035",
+                "CodeDescription": "Puncture/Stab Wound"
+            },
+            {
+                "Code": "3514041",
+                "CodeDescription": "Tenderness Costovertebral Angle"
+            },
+            {
+                "Code": "3514043",
+                "CodeDescription": "Tenderness Midline Spinous Process"
+            },
+            {
+                "Code": "3514045",
+                "CodeDescription": "Tenderness Paraspinous"
+            },
+            {
+                "Code": "3514047",
+                "CodeDescription": "Gunshot Wound"
+            },
+            {
+                "Code": "3514049",
+                "CodeDescription": "Crush Injury"
+            },
+            {
+                "Code": "3514051",
+                "CodeDescription": "Swelling"
+            },
+            {
+                "Code": "3514053",
+                "CodeDescription": "Contusion"
+            },
+            {
+                "Code": "3514055",
+                "CodeDescription": "Tenderness"
+            }
+        ]
+    },
+    "eExam.15": {
+        "Definition": "The location of the patient's extremity assessment findings.",
+        "Code": [
+            {
+                "Code": "3515001",
+                "CodeDescription": "Ankle-Left"
+            },
+            {
+                "Code": "3515003",
+                "CodeDescription": "Ankle-Right"
+            },
+            {
+                "Code": "3515005",
+                "CodeDescription": "Arm-Upper-Left"
+            },
+            {
+                "Code": "3515007",
+                "CodeDescription": "Arm-Upper-Right"
+            },
+            {
+                "Code": "3515009",
+                "CodeDescription": "Elbow-Left"
+            },
+            {
+                "Code": "3515011",
+                "CodeDescription": "Elbow-Right"
+            },
+            {
+                "Code": "3515013",
+                "CodeDescription": "Finger-2nd (Index)-Left"
+            },
+            {
+                "Code": "3515015",
+                "CodeDescription": "Finger-2nd (Index)-Right"
+            },
+            {
+                "Code": "3515017",
+                "CodeDescription": "Finger-3rd (Middle)-Left"
+            },
+            {
+                "Code": "3515019",
+                "CodeDescription": "Finger-3rd (Middle)-Right"
+            },
+            {
+                "Code": "3515021",
+                "CodeDescription": "Finger-4th (Ring)-Left"
+            },
+            {
+                "Code": "3515023",
+                "CodeDescription": "Finger-4th (Ring)-Right"
+            },
+            {
+                "Code": "3515025",
+                "CodeDescription": "Finger-5th (Smallest)-Left"
+            },
+            {
+                "Code": "3515027",
+                "CodeDescription": "Finger-5th (Smallest)-Right"
+            },
+            {
+                "Code": "3515029",
+                "CodeDescription": "Foot-Dorsal-Left"
+            },
+            {
+                "Code": "3515031",
+                "CodeDescription": "Foot-Dorsal-Right"
+            },
+            {
+                "Code": "3515033",
+                "CodeDescription": "Foot-Plantar-Left"
+            },
+            {
+                "Code": "3515035",
+                "CodeDescription": "Foot-Plantar-Right"
+            },
+            {
+                "Code": "3515037",
+                "CodeDescription": "Arm-Lower-Left"
+            },
+            {
+                "Code": "3515039",
+                "CodeDescription": "Arm-Lower-Right"
+            },
+            {
+                "Code": "3515041",
+                "CodeDescription": "Hand-Dorsal-Left"
+            },
+            {
+                "Code": "3515043",
+                "CodeDescription": "Hand-Dorsal-Right"
+            },
+            {
+                "Code": "3515045",
+                "CodeDescription": "Hand-Palm-Left"
+            },
+            {
+                "Code": "3515047",
+                "CodeDescription": "Hand-Palm-Right"
+            },
+            {
+                "Code": "3515049",
+                "CodeDescription": "Hip-Left"
+            },
+            {
+                "Code": "3515051",
+                "CodeDescription": "Hip-Right"
+            },
+            {
+                "Code": "3515053",
+                "CodeDescription": "Knee-Left"
+            },
+            {
+                "Code": "3515055",
+                "CodeDescription": "Knee-Right"
+            },
+            {
+                "Code": "3515057",
+                "CodeDescription": "Leg-Lower-Left"
+            },
+            {
+                "Code": "3515059",
+                "CodeDescription": "Leg-Lower-Right"
+            },
+            {
+                "Code": "3515061",
+                "CodeDescription": "Leg-Upper-Left"
+            },
+            {
+                "Code": "3515063",
+                "CodeDescription": "Leg-Upper-Right"
+            },
+            {
+                "Code": "3515065",
+                "CodeDescription": "Shoulder-Left"
+            },
+            {
+                "Code": "3515067",
+                "CodeDescription": "Shoulder-Right"
+            },
+            {
+                "Code": "3515069",
+                "CodeDescription": "Thumb-Left"
+            },
+            {
+                "Code": "3515071",
+                "CodeDescription": "Thumb-Right"
+            },
+            {
+                "Code": "3515073",
+                "CodeDescription": "Toe-1st (Big)-Left"
+            },
+            {
+                "Code": "3515075",
+                "CodeDescription": "Toe-1st (Big)-Right"
+            },
+            {
+                "Code": "3515077",
+                "CodeDescription": "Toe-2nd-Left"
+            },
+            {
+                "Code": "3515079",
+                "CodeDescription": "Toe-2nd-Right"
+            },
+            {
+                "Code": "3515081",
+                "CodeDescription": "Toe-3rd-Left"
+            },
+            {
+                "Code": "3515083",
+                "CodeDescription": "Toe-3rd-Right"
+            },
+            {
+                "Code": "3515085",
+                "CodeDescription": "Toe-4th-Left"
+            },
+            {
+                "Code": "3515087",
+                "CodeDescription": "Toe-4th-Right"
+            },
+            {
+                "Code": "3515089",
+                "CodeDescription": "Toe-5th (Smallest)-Left"
+            },
+            {
+                "Code": "3515091",
+                "CodeDescription": "Toe-5th (Smallest)-Right"
+            },
+            {
+                "Code": "3515093",
+                "CodeDescription": "Wrist-Left"
+            },
+            {
+                "Code": "3515095",
+                "CodeDescription": "Wrist-Right"
+            },
+            {
+                "Code": "3515097",
+                "CodeDescription": "Arm-Whole Arm and Hand-Left"
+            },
+            {
+                "Code": "3515099",
+                "CodeDescription": "Arm-Whole Arm and Hand-Right"
+            },
+            {
+                "Code": "3515101",
+                "CodeDescription": "Hand-Whole Hand-Left"
+            },
+            {
+                "Code": "3515103",
+                "CodeDescription": "Hand-Whole Hand-Right"
+            },
+            {
+                "Code": "3515105",
+                "CodeDescription": "Leg-Whole Leg-Left"
+            },
+            {
+                "Code": "3515107",
+                "CodeDescription": "Leg-Whole Leg-Right"
+            },
+            {
+                "Code": "3515109",
+                "CodeDescription": "Foot-Whole Foot-Left"
+            },
+            {
+                "Code": "3515111",
+                "CodeDescription": "Foot-Whole Foot-Right"
+            }
+        ]
+    },
+    "eExam.16": {
+        "Definition": "The assessment findings associated with the patient's extremities.",
+        "Code": [
+            {
+                "Code": "3516001",
+                "CodeDescription": "Abrasion"
+            },
+            {
+                "Code": "3516003",
+                "CodeDescription": "Amputation-Acute"
+            },
+            {
+                "Code": "3516005",
+                "CodeDescription": "Amputation-Previous"
+            },
+            {
+                "Code": "3516007",
+                "CodeDescription": "Avulsion"
+            },
+            {
+                "Code": "3516009",
+                "CodeDescription": "Bleeding Controlled"
+            },
+            {
+                "Code": "3516011",
+                "CodeDescription": "Bleeding Uncontrolled"
+            },
+            {
+                "Code": "3516013",
+                "CodeDescription": "Burn-Blistering"
+            },
+            {
+                "Code": "3516015",
+                "CodeDescription": "Burn-Charring"
+            },
+            {
+                "Code": "3516017",
+                "CodeDescription": "Burn-Redness"
+            },
+            {
+                "Code": "3516019",
+                "CodeDescription": "Burn-White/Waxy"
+            },
+            {
+                "Code": "3516021",
+                "CodeDescription": "Clubbing (of fingers)"
+            },
+            {
+                "Code": "3516023",
+                "CodeDescription": "Crush Injury"
+            },
+            {
+                "Code": "3516025",
+                "CodeDescription": "Deformity"
+            },
+            {
+                "Code": "3516027",
+                "CodeDescription": "Dislocation"
+            },
+            {
+                "Code": "3516029",
+                "CodeDescription": "Edema"
+            },
+            {
+                "Code": "3516031",
+                "CodeDescription": "Foreign Body"
+            },
+            {
+                "Code": "3516033",
+                "CodeDescription": "Fracture-Closed"
+            },
+            {
+                "Code": "3516035",
+                "CodeDescription": "Fracture-Open"
+            },
+            {
+                "Code": "3516041",
+                "CodeDescription": "Laceration"
+            },
+            {
+                "Code": "3516043",
+                "CodeDescription": "Motor Function-Abnormal/Weakness"
+            },
+            {
+                "Code": "3516045",
+                "CodeDescription": "Motor Function-Absent"
+            },
+            {
+                "Code": "3516047",
+                "CodeDescription": "Motor Function-Normal"
+            },
+            {
+                "Code": "3516049",
+                "CodeDescription": "Normal"
+            },
+            {
+                "Code": "3516051",
+                "CodeDescription": "Not Done"
+            },
+            {
+                "Code": "3516053",
+                "CodeDescription": "Pain"
+            },
+            {
+                "Code": "3516055",
+                "CodeDescription": "Paralysis"
+            },
+            {
+                "Code": "3516057",
+                "CodeDescription": "Pulse-Abnormal"
+            },
+            {
+                "Code": "3516059",
+                "CodeDescription": "Pulse-Absent"
+            },
+            {
+                "Code": "3516061",
+                "CodeDescription": "Pulse-Normal"
+            },
+            {
+                "Code": "3516063",
+                "CodeDescription": "Puncture/Stab Wound"
+            },
+            {
+                "Code": "3516065",
+                "CodeDescription": "Sensation-Abnormal"
+            },
+            {
+                "Code": "3516067",
+                "CodeDescription": "Sensation-Absent"
+            },
+            {
+                "Code": "3516069",
+                "CodeDescription": "Sensation-Normal"
+            },
+            {
+                "Code": "3516075",
+                "CodeDescription": "Tenderness"
+            },
+            {
+                "Code": "3516077",
+                "CodeDescription": "Gunshot Wound"
+            },
+            {
+                "Code": "3516079",
+                "CodeDescription": "Swelling"
+            },
+            {
+                "Code": "3516081",
+                "CodeDescription": "Contusion"
+            },
+            {
+                "Code": "3516083",
+                "CodeDescription": "Arm Drift"
+            }
+        ]
+    },
+    "eExam.17": {
+        "Definition": "The location of the patient's eye assessment findings.",
+        "Code": [
+            {
+                "Code": "3517001",
+                "CodeDescription": "Bilateral"
+            },
+            {
+                "Code": "3517003",
+                "CodeDescription": "Left"
+            },
+            {
+                "Code": "3517005",
+                "CodeDescription": "Right"
+            }
+        ]
+    },
+    "eExam.18": {
+        "Definition": "The assessment findings of the patient's eye examination.",
+        "Code": [
+            {
+                "Code": "3518001",
+                "CodeDescription": "1-mm"
+            },
+            {
+                "Code": "3518003",
+                "CodeDescription": "2-mm"
+            },
+            {
+                "Code": "3518005",
+                "CodeDescription": "3-mm"
+            },
+            {
+                "Code": "3518007",
+                "CodeDescription": "4-mm"
+            },
+            {
+                "Code": "3518009",
+                "CodeDescription": "5-mm"
+            },
+            {
+                "Code": "3518011",
+                "CodeDescription": "6-mm"
+            },
+            {
+                "Code": "3518013",
+                "CodeDescription": "7-mm"
+            },
+            {
+                "Code": "3518015",
+                "CodeDescription": "8-mm or >"
+            },
+            {
+                "Code": "3518017",
+                "CodeDescription": "Blind"
+            },
+            {
+                "Code": "3518019",
+                "CodeDescription": "Cataract Present"
+            },
+            {
+                "Code": "3518021",
+                "CodeDescription": "Clouded"
+            },
+            {
+                "Code": "3518023",
+                "CodeDescription": "Deformity"
+            },
+            {
+                "Code": "3518025",
+                "CodeDescription": "Dysconjugate Gaze"
+            },
+            {
+                "Code": "3518027",
+                "CodeDescription": "Foreign Body"
+            },
+            {
+                "Code": "3518029",
+                "CodeDescription": "Glaucoma Present"
+            },
+            {
+                "Code": "3518031",
+                "CodeDescription": "Hyphema"
+            },
+            {
+                "Code": "3518033",
+                "CodeDescription": "Jaundiced Sclera"
+            },
+            {
+                "Code": "3518035",
+                "CodeDescription": "Missing"
+            },
+            {
+                "Code": "3518037",
+                "CodeDescription": "Non-Reactive"
+            },
+            {
+                "Code": "3518039",
+                "CodeDescription": "Not Done"
+            },
+            {
+                "Code": "3518041",
+                "CodeDescription": "Non-Reactive Prosthetic"
+            },
+            {
+                "Code": "3518043",
+                "CodeDescription": "Nystagmus Noted"
+            },
+            {
+                "Code": "3518045",
+                "CodeDescription": "Open Globe"
+            },
+            {
+                "Code": "3518047",
+                "CodeDescription": "PERRL"
+            },
+            {
+                "Code": "3518049",
+                "CodeDescription": "Pupil-Irregular/Teardrop"
+            },
+            {
+                "Code": "3518051",
+                "CodeDescription": "Reactive"
+            },
+            {
+                "Code": "3518053",
+                "CodeDescription": "Sluggish"
+            },
+            {
+                "Code": "3518055",
+                "CodeDescription": "Swelling"
+            },
+            {
+                "Code": "3518057",
+                "CodeDescription": "Contusion"
+            },
+            {
+                "Code": "3518059",
+                "CodeDescription": "Puncture/Stab Wound"
+            },
+            {
+                "Code": "3518061",
+                "CodeDescription": "Dilated"
+            },
+            {
+                "Code": "3518063",
+                "CodeDescription": "Pin Point"
+            }
+        ]
+    },
+    "eExam.22": {
+        "Definition": "The location of the patient's lung assessment findings.",
+        "Code": [
+            {
+                "Code": "3522001",
+                "CodeDescription": "Left"
+            },
+            {
+                "Code": "3522003",
+                "CodeDescription": "Right"
+            },
+            {
+                "Code": "3522005",
+                "CodeDescription": "Bilateral"
+            }
+        ]
+    },
+    "eExam.23": {
+        "Definition": "The assessment findings associated with the patient's lungs.",
+        "Code": [
+            {
+                "Code": "3523001",
+                "CodeDescription": "Breath Sounds-Absent"
+            },
+            {
+                "Code": "3523003",
+                "CodeDescription": "Breath Sounds-Decreased"
+            },
+            {
+                "Code": "3523005",
+                "CodeDescription": "Breath Sounds-Equal"
+            },
+            {
+                "Code": "3523007",
+                "CodeDescription": "Breath Sounds-Normal"
+            },
+            {
+                "Code": "3523009",
+                "CodeDescription": "Foreign Body"
+            },
+            {
+                "Code": "3523011",
+                "CodeDescription": "Increased Respiratory Effort"
+            },
+            {
+                "Code": "3523013",
+                "CodeDescription": "Normal"
+            },
+            {
+                "Code": "3523015",
+                "CodeDescription": "Not Done"
+            },
+            {
+                "Code": "3523017",
+                "CodeDescription": "Pain"
+            },
+            {
+                "Code": "3523019",
+                "CodeDescription": "Pain with Inspiraton/Expiration"
+            },
+            {
+                "Code": "3523021",
+                "CodeDescription": "Rales"
+            },
+            {
+                "Code": "3523023",
+                "CodeDescription": "Rhonchi"
+            },
+            {
+                "Code": "3523025",
+                "CodeDescription": "Rhonchi/Wheezing"
+            },
+            {
+                "Code": "3523027",
+                "CodeDescription": "Stridor"
+            },
+            {
+                "Code": "3523029",
+                "CodeDescription": "Wheezing-Expiratory"
+            },
+            {
+                "Code": "3523031",
+                "CodeDescription": "Wheezing-Inspiratory"
+            }
+        ]
+    },
+    "eExam.24": {
+        "Definition": "The location of the patient's chest assessment findings.",
+        "Code": [
+            {
+                "Code": "3524001",
+                "CodeDescription": "Left - Anterior"
+            },
+            {
+                "Code": "3524003",
+                "CodeDescription": "Left - Posterior"
+            },
+            {
+                "Code": "3524005",
+                "CodeDescription": "Right - Anterior"
+            },
+            {
+                "Code": "3524007",
+                "CodeDescription": "Right - Posterior"
+            },
+            {
+                "Code": "3524009",
+                "CodeDescription": "General - Anterior"
+            },
+            {
+                "Code": "3524011",
+                "CodeDescription": "General - Posterior"
+            },
+            {
+                "Code": "3524013",
+                "CodeDescription": "Left - Side"
+            },
+            {
+                "Code": "3524015",
+                "CodeDescription": "Right - Side"
+            }
+        ]
+    },
+    "eExam.25": {
+        "Definition": "The assessment findings associated with the patient's chest.",
+        "Code": [
+            {
+                "Code": "3525001",
+                "CodeDescription": "Abrasion"
+            },
+            {
+                "Code": "3525003",
+                "CodeDescription": "Avulsion"
+            },
+            {
+                "Code": "3525005",
+                "CodeDescription": "Accessory Muscles Used with Breathing"
+            },
+            {
+                "Code": "3525007",
+                "CodeDescription": "Bleeding Controlled"
+            },
+            {
+                "Code": "3525009",
+                "CodeDescription": "Bleeding Uncontrolled"
+            },
+            {
+                "Code": "3525011",
+                "CodeDescription": "Burn-Blistering"
+            },
+            {
+                "Code": "3525013",
+                "CodeDescription": "Burn-Charing"
+            },
+            {
+                "Code": "3525015",
+                "CodeDescription": "Burn-Redness"
+            },
+            {
+                "Code": "3525017",
+                "CodeDescription": "Burn-White/Waxy"
+            },
+            {
+                "Code": "3525019",
+                "CodeDescription": "Crush Injury"
+            },
+            {
+                "Code": "3525021",
+                "CodeDescription": "Deformity"
+            },
+            {
+                "Code": "3525023",
+                "CodeDescription": "Flail Segment"
+            },
+            {
+                "Code": "3525025",
+                "CodeDescription": "Implanted Device"
+            },
+            {
+                "Code": "3525027",
+                "CodeDescription": "Laceration"
+            },
+            {
+                "Code": "3525029",
+                "CodeDescription": "Normal"
+            },
+            {
+                "Code": "3525031",
+                "CodeDescription": "Not Done"
+            },
+            {
+                "Code": "3525033",
+                "CodeDescription": "Pain"
+            },
+            {
+                "Code": "3525035",
+                "CodeDescription": "Pain with Inspiration/Expiration"
+            },
+            {
+                "Code": "3525037",
+                "CodeDescription": "Puncture/Stab Wound"
+            },
+            {
+                "Code": "3525039",
+                "CodeDescription": "Retraction"
+            },
+            {
+                "Code": "3525041",
+                "CodeDescription": "Tenderness"
+            },
+            {
+                "Code": "3525043",
+                "CodeDescription": "Gunshot Wound"
+            },
+            {
+                "Code": "3525045",
+                "CodeDescription": "Swelling"
+            },
+            {
+                "Code": "3525047",
+                "CodeDescription": "Contusion"
+            },
+            {
+                "Code": "3525049",
+                "CodeDescription": "Tenderness-General"
+            }
+        ]
+    },
+    "eExam.19": {
+        "Definition": "The assessment findings of the patient's mental status examination.",
+        "Code": [
+            {
+                "Code": "3519001",
+                "CodeDescription": "Combative"
+            },
+            {
+                "Code": "3519003",
+                "CodeDescription": "Confused"
+            },
+            {
+                "Code": "3519005",
+                "CodeDescription": "Hallucinations"
+            },
+            {
+                "Code": "3519007",
+                "CodeDescription": "Normal Baseline for Patient"
+            },
+            {
+                "Code": "3519009",
+                "CodeDescription": "Not Done"
+            },
+            {
+                "Code": "3519011",
+                "CodeDescription": "Oriented-Person"
+            },
+            {
+                "Code": "3519013",
+                "CodeDescription": "Oriented-Place"
+            },
+            {
+                "Code": "3519015",
+                "CodeDescription": "Oriented-Event"
+            },
+            {
+                "Code": "3519017",
+                "CodeDescription": "Oriented-Time"
+            },
+            {
+                "Code": "3519021",
+                "CodeDescription": "Unresponsive"
+            },
+            {
+                "Code": "3519023",
+                "CodeDescription": "Agitation"
+            },
+            {
+                "Code": "3519025",
+                "CodeDescription": "Somnolent"
+            },
+            {
+                "Code": "3519027",
+                "CodeDescription": "Stupor"
+            },
+            {
+                "Code": "3519029",
+                "CodeDescription": "Altered mental status, unspecified"
+            },
+            {
+                "Code": "3519031",
+                "CodeDescription": "Developmentally Impaired"
+            },
+            {
+                "Code": "3519033",
+                "CodeDescription": "Disorientation, unspecified"
+            },
+            {
+                "Code": "3519035",
+                "CodeDescription": "Pharmacologically Paralyzed"
+            },
+            {
+                "Code": "3519037",
+                "CodeDescription": "Pharmacologically Sedated"
+            },
+            {
+                "Code": "3519039",
+                "CodeDescription": "Psychologically Impaired"
+            },
+            {
+                "Code": "3519041",
+                "CodeDescription": "Slowness and poor responsiveness"
+            },
+            {
+                "Code": "3519043",
+                "CodeDescription": "State of emotional shock and stress, unspecified"
+            },
+            {
+                "Code": "3519045",
+                "CodeDescription": "Strange and inexplicable behavior"
+            },
+            {
+                "Code": "3519047",
+                "CodeDescription": "Uncooperative"
+            },
+            {
+                "Code": "3519049",
+                "CodeDescription": "Unspecified coma"
+            }
+        ]
+    },
+    "eExam.20": {
+        "Definition": "The assessment findings of the patient's neurological examination.",
+        "Code": [
+            {
+                "Code": "3520001",
+                "CodeDescription": "Aphagia"
+            },
+            {
+                "Code": "3520003",
+                "CodeDescription": "Aphasia"
+            },
+            {
+                "Code": "3520005",
+                "CodeDescription": "Cerebellar Function-Abnormal"
+            },
+            {
+                "Code": "3520007",
+                "CodeDescription": "Cerebellar Function-Normal"
+            },
+            {
+                "Code": "3520009",
+                "CodeDescription": "Decerebrate Posturing"
+            },
+            {
+                "Code": "3520011",
+                "CodeDescription": "Decorticate Posturing"
+            },
+            {
+                "Code": "3520013",
+                "CodeDescription": "Gait-Abnormal"
+            },
+            {
+                "Code": "3520015",
+                "CodeDescription": "Gait-Normal"
+            },
+            {
+                "Code": "3520017",
+                "CodeDescription": "Hemiplegia-Left"
+            },
+            {
+                "Code": "3520019",
+                "CodeDescription": "Hemiplegia-Right"
+            },
+            {
+                "Code": "3520021",
+                "CodeDescription": "Normal Baseline for Patient"
+            },
+            {
+                "Code": "3520023",
+                "CodeDescription": "Not Done"
+            },
+            {
+                "Code": "3520026",
+                "CodeDescription": "Status Seizure"
+            },
+            {
+                "Code": "3520055",
+                "CodeDescription": "Other Seizures"
+            },
+            {
+                "Code": "3520027",
+                "CodeDescription": "Speech Normal"
+            },
+            {
+                "Code": "3520029",
+                "CodeDescription": "Speech Slurring"
+            },
+            {
+                "Code": "3520031",
+                "CodeDescription": "Strength-Asymmetric"
+            },
+            {
+                "Code": "3520033",
+                "CodeDescription": "Strength-Normal"
+            },
+            {
+                "Code": "3520035",
+                "CodeDescription": "Strength-Symmetric"
+            },
+            {
+                "Code": "3520037",
+                "CodeDescription": "Tremors"
+            },
+            {
+                "Code": "3520039",
+                "CodeDescription": "Weakness-Facial Droop-Left"
+            },
+            {
+                "Code": "3520041",
+                "CodeDescription": "Weakness-Facial Droop-Right"
+            },
+            {
+                "Code": "3520043",
+                "CodeDescription": "Weakness-Left Sided"
+            },
+            {
+                "Code": "3520045",
+                "CodeDescription": "Weakness-Right Sided"
+            },
+            {
+                "Code": "3520051",
+                "CodeDescription": "Arm Drift-Left"
+            },
+            {
+                "Code": "3520053",
+                "CodeDescription": "Arm Drift-Right"
+            }
+        ]
+    },
+    "eExam.21": {
+        "Definition": "Indication if the Stroke/CVA Symptoms resolved and when.",
+        "Code": [
+            {
+                "Code": "3521001",
+                "CodeDescription": "No"
+            },
+            {
+                "Code": "3521003",
+                "CodeDescription": "Yes-Resolved Prior to EMS Arrival"
+            },
+            {
+                "Code": "3521005",
+                "CodeDescription": "Yes-Resolved in EMS Presence"
+            }
+        ]
+    }
+    }

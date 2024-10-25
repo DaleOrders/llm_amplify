@@ -1,0 +1,19 @@
+{
+    "eVitals.03": {
+    "Definition": "The cardiac rhythm / ECG and other electrocardiography findings of the patient as interpreted by EMS personnel.",
+    "Code": [
+        {
+            "Code": "9901001",
+            "CodeDescription": "Agonal/Idioventricular"
+        },
+        {
+            "Code": "9901003",
+            "CodeDescription": "Asystole"
+        },
+        {
+            "Code": "9901005",
+            "CodeDescription": "Artifact"
+        }
+    ]
+}
+}

@@ -1,0 +1,672 @@
+{
+    "eVitals.01": {
+        "Definition": "The date/time vital signs were taken on the patient.",
+        "Code": []
+    },
+    "eVitals.02": {
+        "Definition": "Indicates that the information which is documented was obtained prior to the documenting EMS units care.",
+        "Code": [
+            {
+                "Code": "9923001",
+                "CodeDescription": "No"
+            },
+            {
+                "Code": "9923003",
+                "CodeDescription": "Yes"
+            }
+        ]
+    },
+    "eVitals.03": {
+        "Definition": "The cardiac rhythm / ECG and other electrocardiography findings of the patient as interpreted by EMS personnel.",
+        "Code": [
+            {
+                "Code": "9901001",
+                "CodeDescription": "Agonal/Idioventricular"
+            },
+            {
+                "Code": "9901003",
+                "CodeDescription": "Asystole"
+            },
+            {
+                "Code": "9901005",
+                "CodeDescription": "Artifact"
+            },
+            {
+                "Code": "9901007",
+                "CodeDescription": "Atrial Fibrillation"
+            },
+            {
+                "Code": "9901009",
+                "CodeDescription": "Atrial Flutter"
+            },
+            {
+                "Code": "9901011",
+                "CodeDescription": "AV Block-1st Degree"
+            },
+            {
+                "Code": "9901013",
+                "CodeDescription": "AV Block-2nd Degree-Type 1"
+            },
+            {
+                "Code": "9901015",
+                "CodeDescription": "AV Block-2nd Degree-Type 2"
+            },
+            {
+                "Code": "9901017",
+                "CodeDescription": "AV Block-3rd Degree"
+            },
+            {
+                "Code": "9901019",
+                "CodeDescription": "Junctional"
+            },
+            {
+                "Code": "9901021",
+                "CodeDescription": "Left Bundle Branch Block"
+            },
+            {
+                "Code": "9901023",
+                "CodeDescription": "Non-STEMI Anterior Ischemia"
+            },
+            {
+                "Code": "9901025",
+                "CodeDescription": "Non-STEMI Inferior Ischemia"
+            },
+            {
+                "Code": "9901027",
+                "CodeDescription": "Non-STEMI Lateral Ischemia"
+            },
+            {
+                "Code": "9901029",
+                "CodeDescription": "Non-STEMI Posterior Ischemia"
+            },
+            {
+                "Code": "9901030",
+                "CodeDescription": "Non-STEMI Septal Ischemia"
+            },
+            {
+                "Code": "9901031",
+                "CodeDescription": "Other"
+            },
+            {
+                "Code": "9901033",
+                "CodeDescription": "Paced Rhythm"
+            },
+            {
+                "Code": "9901035",
+                "CodeDescription": "PEA"
+            },
+            {
+                "Code": "9901037",
+                "CodeDescription": "Premature Atrial Contractions"
+            },
+            {
+                "Code": "9901039",
+                "CodeDescription": "Premature Ventricular Contractions"
+            },
+            {
+                "Code": "9901041",
+                "CodeDescription": "Right Bundle Branch Block"
+            },
+            {
+                "Code": "9901043",
+                "CodeDescription": "Sinus Arrhythmia"
+            },
+            {
+                "Code": "9901045",
+                "CodeDescription": "Sinus Bradycardia"
+            },
+            {
+                "Code": "9901047",
+                "CodeDescription": "Sinus Rhythm"
+            },
+            {
+                "Code": "9901049",
+                "CodeDescription": "Sinus Tachycardia"
+            },
+            {
+                "Code": "9901051",
+                "CodeDescription": "STEMI Anterior Ischemia"
+            },
+            {
+                "Code": "9901053",
+                "CodeDescription": "STEMI Inferior Ischemia"
+            },
+            {
+                "Code": "9901055",
+                "CodeDescription": "STEMI Lateral Ischemia"
+            },
+            {
+                "Code": "9901057",
+                "CodeDescription": "STEMI Posterior Ischemia"
+            },
+            {
+                "Code": "9901058",
+                "CodeDescription": "STEMI Septal Ischemia"
+            },
+            {
+                "Code": "9901059",
+                "CodeDescription": "Supraventricular Tachycardia"
+            },
+            {
+                "Code": "9901061",
+                "CodeDescription": "Torsades De Points"
+            },
+            {
+                "Code": "9901063",
+                "CodeDescription": "Unknown AED Non-Shockable Rhythm"
+            },
+            {
+                "Code": "9901065",
+                "CodeDescription": "Unknown AED Shockable Rhythm"
+            },
+            {
+                "Code": "9901067",
+                "CodeDescription": "Ventricular Fibrillation"
+            },
+            {
+                "Code": "9901069",
+                "CodeDescription": "Ventricular Tachycardia (With Pulse)"
+            },
+            {
+                "Code": "9901071",
+                "CodeDescription": "Ventricular Tachycardia (Pulseless)"
+            }
+        ]
+    },
+    "eVitals.04": {
+        "Definition": "The type of ECG associated with the cardiac rhythm.",
+        "Code": [
+            {
+                "Code": "3304000",
+                "CodeDescription": "2 Lead ECG (pads or paddles)"
+            },
+            {
+                "Code": "3304001",
+                "CodeDescription": "3 Lead"
+            },
+            {
+                "Code": "3304003",
+                "CodeDescription": "4 Lead"
+            },
+            {
+                "Code": "3304005",
+                "CodeDescription": "5 Lead"
+            },
+            {
+                "Code": "3304007",
+                "CodeDescription": "12 Lead-Left Sided (Normal)"
+            },
+            {
+                "Code": "3304009",
+                "CodeDescription": "12 Lead-Right Sided"
+            },
+            {
+                "Code": "3304011",
+                "CodeDescription": "15 Lead"
+            },
+            {
+                "Code": "3304013",
+                "CodeDescription": "18 Lead"
+            },
+            {
+                "Code": "3304015",
+                "CodeDescription": "Other"
+            }
+        ]
+    },
+    "eVitals.05": {
+        "Definition": "The method of ECG interpretation.",
+        "Code": [
+            {
+                "Code": "3305001",
+                "CodeDescription": "Computer Interpretation"
+            },
+            {
+                "Code": "3305003",
+                "CodeDescription": "Manual Interpretation"
+            },
+            {
+                "Code": "3305005",
+                "CodeDescription": "Transmission with No Interpretation"
+            },
+            {
+                "Code": "3305007",
+                "CodeDescription": "Transmission with Remote Interpretation"
+            }
+        ]
+    },
+    "eVitals.06": {
+        "Definition": "The patient's systolic blood pressure.",
+        "Code": []
+    },
+    "eVitals.07": {
+        "Definition": "The patient's diastolic blood pressure.",
+        "Code": []
+    },
+    "eVitals.08": {
+        "Definition": "Indication of method of blood pressure measurement.",
+        "Code": [
+            {
+                "Code": "3308001",
+                "CodeDescription": "Arterial Line"
+            },
+            {
+                "Code": "3308003",
+                "CodeDescription": "Doppler"
+            },
+            {
+                "Code": "3308005",
+                "CodeDescription": "Cuff-Automated"
+            },
+            {
+                "Code": "3308007",
+                "CodeDescription": "Cuff-Manual Auscultated"
+            },
+            {
+                "Code": "3308009",
+                "CodeDescription": "Cuff-Manual Palpated Only"
+            },
+            {
+                "Code": "3308011",
+                "CodeDescription": "Venous Line"
+            }
+        ]
+    },
+    "eVitals.09": {
+        "Definition": "The patient's mean arterial pressure.",
+        "Code": []
+    },
+    "eVitals.10": {
+        "Definition": "The patient's heart rate expressed as a number per minute.",
+        "Code": []
+    },
+    "eVitals.11": {
+        "Definition": "The method in which the Heart Rate was measured. Values include auscultated, palpated, electronic monitor.",
+        "Code": [
+            {
+                "Code": "3311001",
+                "CodeDescription": "Auscultated"
+            },
+            {
+                "Code": "3311003",
+                "CodeDescription": "Doppler"
+            },
+            {
+                "Code": "3311005",
+                "CodeDescription": "Electronic Monitor - Cardiac"
+            },
+            {
+                "Code": "3311007",
+                "CodeDescription": "Electronic Monitor - Pulse Oximeter"
+            },
+            {
+                "Code": "3311009",
+                "CodeDescription": "Electronic Monitor (Other)"
+            },
+            {
+                "Code": "3311011",
+                "CodeDescription": "Palpated"
+            }
+        ]
+    },
+    "eVitals.12": {
+        "Definition": "The patient's oxygen saturation.",
+        "Code": []
+    },
+    "eVitals.13": {
+        "Definition": "The clinical rhythm of the patient's pulse.",
+        "Code": [
+            {
+                "Code": "3313001",
+                "CodeDescription": "Irregularly Irregular"
+            },
+            {
+                "Code": "3313003",
+                "CodeDescription": "Regular"
+            },
+            {
+                "Code": "3313005",
+                "CodeDescription": "Regularly Irregular"
+            }
+        ]
+    },
+    "eVitals.14": {
+        "Definition": "The patient's respiratory rate expressed as a number per minute.",
+        "Code": []
+    },
+    "eVitals.15": {
+        "Definition": "The patient's respiratory effort.",
+        "Code": [
+            {
+                "Code": "3315001",
+                "CodeDescription": "Apneic"
+            },
+            {
+                "Code": "3315003",
+                "CodeDescription": "Labored"
+            },
+            {
+                "Code": "3315005",
+                "CodeDescription": "Mechanically Assisted (BVM, CPAP, etc.)"
+            },
+            {
+                "Code": "3315007",
+                "CodeDescription": "Normal"
+            },
+            {
+                "Code": "3315009",
+                "CodeDescription": "Rapid"
+            },
+            {
+                "Code": "3315011",
+                "CodeDescription": "Shallow"
+            },
+            {
+                "Code": "3315013",
+                "CodeDescription": "Weak/Agonal"
+            }
+        ]
+    },
+    "eVitals.16": {
+        "Definition": "The numeric value of the patient's exhaled end tidal carbon dioxide (ETCO2) level measured as a unit of pressure in millimeters of mercury (mmHg), percentage or, kilopascal (kPa).",
+        "Code": []
+    },
+    "eVitals.17": {
+        "Definition": "The numeric value of the patient's carbon monoxide level measured as a percentage (%) of carboxyhemoglobin (COHb).",
+        "Code": []
+    },
+    "eVitals.18": {
+        "Definition": "The patient's blood glucose level.",
+        "Code": []
+    },
+    "eVitals.19": {
+        "Definition": "The patient's Glasgow Coma Score Eye opening response.",
+        "Code": [
+            {
+                "Code": "1",
+                "CodeDescription": "No eye movement when assessed (All Age Groups)"
+            },
+            {
+                "Code": "2",
+                "CodeDescription": "Opens Eyes to painful stimulation (All Age Groups)"
+            },
+            {
+                "Code": "3",
+                "CodeDescription": "Opens Eyes to verbal stimulation (All Age Groups)"
+            },
+            {
+                "Code": "4",
+                "CodeDescription": "Opens Eyes spontaneously (All Age Groups)"
+            }
+        ]
+    },
+    "eVitals.20": {
+        "Definition": "The patient's Glasgow Coma Score Verbal response.",
+        "Code": [
+            {
+                "Code": "1",
+                "CodeDescription": "No verbal/vocal response (All Age Groups)"
+            },
+            {
+                "Code": "2",
+                "CodeDescription": "Incomprehensible sounds (>2 Years); Inconsolable, agitated"
+            },
+            {
+                "Code": "3",
+                "CodeDescription": "Inappropriate words (>2 Years); Inconsistently consolable, moaning"
+            },
+            {
+                "Code": "4",
+                "CodeDescription": "Confused (>2 Years); Cries but is consolable, inappropriate interactions"
+            },
+            {
+                "Code": "5",
+                "CodeDescription": "Oriented (>2 Years); Smiles, oriented to sounds, follows objects, interacts"
+            }
+        ]
+    },
+    "eVitals.21": {
+        "Definition": "The patient's Glasgow Coma Score Motor response.",
+        "Code": [
+            {
+                "Code": "1",
+                "CodeDescription": "No Motor Response (All Age Groups)"
+            },
+            {
+                "Code": "2",
+                "CodeDescription": "Extension to pain (All Age Groups)"
+            },
+            {
+                "Code": "3",
+                "CodeDescription": "Flexion to pain (All Age Groups)"
+            },
+            {
+                "Code": "4",
+                "CodeDescription": "Withdrawal from pain (All Age Groups)"
+            },
+            {
+                "Code": "5",
+                "CodeDescription": "Localizing pain (All Age Groups)"
+            },
+            {
+                "Code": "6",
+                "CodeDescription": "Obeys commands (>2Years); Appropriate response to stimulation"
+            }
+        ]
+    },
+    "eVitals.22": {
+        "Definition": "Documentation of factors which make the GCS score more meaningful.",
+        "Code": [
+            {
+                "Code": "3322001",
+                "CodeDescription": "Eye Obstruction Prevents Eye Assessment"
+            },
+            {
+                "Code": "3322003",
+                "CodeDescription": "Initial GCS has legitimate values without interventions such as intubation and sedation"
+            },
+            {
+                "Code": "3322005",
+                "CodeDescription": "Patient Chemically Paralyzed"
+            },
+            {
+                "Code": "3322007",
+                "CodeDescription": "Patient Chemically Sedated"
+            },
+            {
+                "Code": "3322009",
+                "CodeDescription": "Patient Intubated"
+            }
+        ]
+    },
+    "eVitals.23": {
+        "Definition": "The patient's total Glasgow Coma Score.",
+        "Code": []
+    },
+    "eVitals.24": {
+        "Definition": "The patient's body temperature in degrees Celsius/centigrade.",
+        "Code": []
+    },
+    "eVitals.25": {
+        "Definition": "The method used to obtain the patient's body temperature.",
+        "Code": [
+            {
+                "Code": "3325001",
+                "CodeDescription": "Axillary"
+            },
+            {
+                "Code": "3325003",
+                "CodeDescription": "Central (Venous or Arterial)"
+            },
+            {
+                "Code": "3325005",
+                "CodeDescription": "Esophageal"
+            },
+            {
+                "Code": "3325007",
+                "CodeDescription": "Oral"
+            },
+            {
+                "Code": "3325009",
+                "CodeDescription": "Rectal"
+            },
+            {
+                "Code": "3325011",
+                "CodeDescription": "Temporal Artery"
+            },
+            {
+                "Code": "3325013",
+                "CodeDescription": "Tympanic"
+            },
+            {
+                "Code": "3325015",
+                "CodeDescription": "Urinary Catheter"
+            },
+            {
+                "Code": "3325017",
+                "CodeDescription": "Skin Probe"
+            }
+        ]
+    },
+    "eVitals.26": {
+        "Definition": "The patient's highest level of responsiveness.",
+        "Code": [
+            {
+                "Code": "3326001",
+                "CodeDescription": "Alert"
+            },
+            {
+                "Code": "3326003",
+                "CodeDescription": "Verbal"
+            },
+            {
+                "Code": "3326005",
+                "CodeDescription": "Painful"
+            },
+            {
+                "Code": "3326007",
+                "CodeDescription": "Unresponsive"
+            }
+        ]
+    },
+    "eVitals.27": {
+        "Definition": "The patient's indication of pain from a scale of 0-10.",
+        "Code": []
+    },
+    "eVitals.28": {
+        "Definition": "The type of pain scale used.",
+        "Code": [
+            {
+                "Code": "3328001",
+                "CodeDescription": "FLACC (Face, Legs, Activity, Cry, Consolability)"
+            },
+            {
+                "Code": "3328003",
+                "CodeDescription": "Numeric (0-10)"
+            },
+            {
+                "Code": "3328005",
+                "CodeDescription": "Other"
+            },
+            {
+                "Code": "3328007",
+                "CodeDescription": "Wong-Baker (FACES)"
+            }
+        ]
+    },
+    "eVitals.29": {
+        "Definition": "The findings or results of the Stroke Scale Type (eVitals.30) used to assess the patient exhibiting stroke-like symptoms.",
+        "Code": [
+            {
+                "Code": "3329001",
+                "CodeDescription": "Negative"
+            },
+            {
+                "Code": "3329003",
+                "CodeDescription": "Non-Conclusive"
+            },
+            {
+                "Code": "3329005",
+                "CodeDescription": "Positive"
+            }
+        ]
+    },
+    "eVitals.30": {
+        "Definition": "The type of stroke scale used.",
+        "Code": [
+            {
+                "Code": "3330001",
+                "CodeDescription": "Cincinnati Prehospital Stroke Scale (CPSS)"
+            },
+            {
+                "Code": "3330004",
+                "CodeDescription": "Los Angeles Prehospital Stroke Screen (LAPSS)"
+            },
+            {
+                "Code": "3330005",
+                "CodeDescription": "Massachusetts Stroke Scale (MSS)"
+            },
+            {
+                "Code": "3330007",
+                "CodeDescription": "Miami Emergency Neurologic Deficit Exam (MEND)"
+            },
+            {
+                "Code": "3330009",
+                "CodeDescription": "NIH Stroke Scale (NIHSS)"
+            },
+            {
+                "Code": "3330011",
+                "CodeDescription": "Other Stroke Scale Type"
+            },
+            {
+                "Code": "3330013",
+                "CodeDescription": "FAST-ED"
+            },
+            {
+                "Code": "3330015",
+                "CodeDescription": "Boston Stroke Scale (BOSS)"
+            },
+            {
+                "Code": "3330017",
+                "CodeDescription": "Ontario Prehospital Stroke Scale (OPSS)"
+            },
+            {
+                "Code": "3330019",
+                "CodeDescription": "Melbourne Ambulance Stroke Screen (MASS)"
+            },
+            {
+                "Code": "3330021",
+                "CodeDescription": "Rapid Arterial oCclusion Evaluation (RACE)"
+            },
+            {
+                "Code": "3330023",
+                "CodeDescription": "Los Angeles Motor Score (LAMS)"
+            }
+        ]
+    },
+    "eVitals.31": {
+        "Definition": "The results of the patient's Reperfusion Checklist for potential Thrombolysis use.",
+        "Code": [
+            {
+                "Code": "3331001",
+                "CodeDescription": "Definite Contraindications to Thrombolytic Use"
+            },
+            {
+                "Code": "3331003",
+                "CodeDescription": "No Contraindications to Thrombolytic Use"
+            },
+            {
+                "Code": "3331005",
+                "CodeDescription": "Possible Contraindications to Thrombolytic Use"
+            }
+        ]
+    },
+    "eVitals.32": {
+        "Definition": "The patient's total APGAR score (0-10).",
+        "Code": []
+    },
+    "eVitals.33": {
+        "Definition": "The patient's Revised Trauma Score.",
+        "Code": []
+    }
+    }

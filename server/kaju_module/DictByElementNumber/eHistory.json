@@ -1,0 +1,688 @@
+{
+    "eHistory.01": {
+        "Definition": "Indication of whether or not there were any patient specific barriers to serving the patient at the scene.",
+        "Code": [
+            {
+                "Code": "3101001",
+                "CodeDescription": "Cultural, Custom, Religious"
+            },
+            {
+                "Code": "3101003",
+                "CodeDescription": "Developmentally Impaired"
+            },
+            {
+                "Code": "3101005",
+                "CodeDescription": "Hearing Impaired"
+            },
+            {
+                "Code": "3101007",
+                "CodeDescription": "Language"
+            },
+            {
+                "Code": "3101009",
+                "CodeDescription": "None Noted"
+            },
+            {
+                "Code": "3101011",
+                "CodeDescription": "Obesity"
+            },
+            {
+                "Code": "3101013",
+                "CodeDescription": "Physical Barrier (Unable to Access Patient)"
+            },
+            {
+                "Code": "3101015",
+                "CodeDescription": "Physically Impaired"
+            },
+            {
+                "Code": "3101017",
+                "CodeDescription": "Physically Restrained"
+            },
+            {
+                "Code": "3101019",
+                "CodeDescription": "Psychologically Impaired"
+            },
+            {
+                "Code": "3101021",
+                "CodeDescription": "Sight Impaired"
+            },
+            {
+                "Code": "3101023",
+                "CodeDescription": "Speech Impaired"
+            },
+            {
+                "Code": "3101025",
+                "CodeDescription": "Unattended or Unsupervised (including minors)"
+            },
+            {
+                "Code": "3101027",
+                "CodeDescription": "Unconscious"
+            },
+            {
+                "Code": "3101029",
+                "CodeDescription": "Uncooperative"
+            },
+            {
+                "Code": "3101031",
+                "CodeDescription": "State of Emotional Distress"
+            },
+            {
+                "Code": "3101033",
+                "CodeDescription": "Alcohol Use, Suspected"
+            },
+            {
+                "Code": "3101035",
+                "CodeDescription": "Drug Use, Suspected"
+            }
+        ]
+    },
+    "eHistory.02": {
+        "Definition": "The last name of the patient's practitioner.",
+        "Code": []
+    },
+    "eHistory.03": {
+        "Definition": "The first name of the patient's practitioner.",
+        "Code": []
+    },
+    "eHistory.04": {
+        "Definition": "The middle name or initial of the patient's practitioner.",
+        "Code": []
+    },
+    "eHistory.05": {
+        "Definition": "The presence of a valid DNR form, living will, or document directing end of life or healthcare treatment decisions.",
+        "Code": [
+            {
+                "Code": "3105001",
+                "CodeDescription": "Family/Guardian request DNR (but no documentation)"
+            },
+            {
+                "Code": "3105003",
+                "CodeDescription": "Living Will"
+            },
+            {
+                "Code": "3105005",
+                "CodeDescription": "NaN"
+            },
+            {
+                "Code": "3105007",
+                "CodeDescription": "Other"
+            },
+            {
+                "Code": "3105009",
+                "CodeDescription": "Other Healthcare Advanced Directive Form"
+            },
+            {
+                "Code": "3105011",
+                "CodeDescription": "State EMS DNR or Medical Order Form"
+            }
+        ]
+    },
+    "eHistory.06": {
+        "Definition": "The patient's medication allergies.",
+        "Code": []
+    },
+    "eHistory.07": {
+        "Definition": "The patient's known allergies to food or environmental agents.",
+        "Code": []
+    },
+    "eHistory.08": {
+        "Definition": "The patient's pre-existing medical and surgery history of the patient.",
+        "Code": []
+    },
+    "eHistory.09": {
+        "Definition": "Type of person medical history obtained from.",
+        "Code": [
+            {
+                "Code": "3109001",
+                "CodeDescription": "Bystander/Other"
+            },
+            {
+                "Code": "3109003",
+                "CodeDescription": "Family"
+            },
+            {
+                "Code": "3109005",
+                "CodeDescription": "Health Care Personnel"
+            },
+            {
+                "Code": "3109007",
+                "CodeDescription": "Patient"
+            }
+        ]
+    },
+    "eHistory.10": {
+        "Definition": "The immunization type of the patient.",
+        "Code": [
+            {
+                "Code": "9910001",
+                "CodeDescription": "Anthrax"
+            },
+            {
+                "Code": "9910003",
+                "CodeDescription": "Cholera"
+            },
+            {
+                "Code": "9910005",
+                "CodeDescription": "DPT / TDaP (Diphtheria, Pertussis, Tetanus)"
+            },
+            {
+                "Code": "9910007",
+                "CodeDescription": "Hemophilus Influenza B"
+            },
+            {
+                "Code": "9910009",
+                "CodeDescription": "Hepatitis A"
+            },
+            {
+                "Code": "9910011",
+                "CodeDescription": "Hepatitis B"
+            },
+            {
+                "Code": "9910013",
+                "CodeDescription": "Human Papilloma Virus (HPV)"
+            },
+            {
+                "Code": "9910015",
+                "CodeDescription": "Influenza-H1N1"
+            },
+            {
+                "Code": "9910017",
+                "CodeDescription": "Influenza-Other"
+            },
+            {
+                "Code": "9910019",
+                "CodeDescription": "Influenza-Seasonal (In past 12 months)"
+            },
+            {
+                "Code": "9910021",
+                "CodeDescription": "Lyme Disease"
+            },
+            {
+                "Code": "9910023",
+                "CodeDescription": "Meningococcus"
+            },
+            {
+                "Code": "9910025",
+                "CodeDescription": "MMR (Measles, Mumps, Rubella)"
+            },
+            {
+                "Code": "9910027",
+                "CodeDescription": "Other-Not Listed"
+            },
+            {
+                "Code": "9910029",
+                "CodeDescription": "Plague"
+            },
+            {
+                "Code": "9910031",
+                "CodeDescription": "Pneumococcal (Pneumonia)"
+            },
+            {
+                "Code": "9910033",
+                "CodeDescription": "Polio"
+            },
+            {
+                "Code": "9910035",
+                "CodeDescription": "Rabies"
+            },
+            {
+                "Code": "9910037",
+                "CodeDescription": "Rotavirus"
+            },
+            {
+                "Code": "9910039",
+                "CodeDescription": "Shingles"
+            },
+            {
+                "Code": "9910041",
+                "CodeDescription": "Small Pox"
+            },
+            {
+                "Code": "9910043",
+                "CodeDescription": "Tetanus"
+            },
+            {
+                "Code": "9910045",
+                "CodeDescription": "Tuberculosis"
+            },
+            {
+                "Code": "9910047",
+                "CodeDescription": "Typhoid"
+            },
+            {
+                "Code": "9910049",
+                "CodeDescription": "Varicella (Chickenpox)"
+            },
+            {
+                "Code": "9910051",
+                "CodeDescription": "Yellow Fever"
+            },
+            {
+                "Code": "9910053",
+                "CodeDescription": "NaN"
+            }
+        ]
+    },
+    "eHistory.11": {
+        "Definition": "The year associated with each immunization type.",
+        "Code": []
+    },
+    "eHistory.12": {
+        "Definition": "The medications the patient currently takes.",
+        "Code": []
+    },
+    "eHistory.13": {
+        "Definition": "The numeric dose or amount of the patient's current medication.",
+        "Code": []
+    },
+    "eHistory.14": {
+        "Definition": "The dosage unit of the patient's current medication.",
+        "Code": [
+            {
+                "Code": "3114001",
+                "CodeDescription": "Centimeters (cm)"
+            },
+            {
+                "Code": "3114003",
+                "CodeDescription": "Grams (gms)"
+            },
+            {
+                "Code": "3114005",
+                "CodeDescription": "Drops (gtts)"
+            },
+            {
+                "Code": "3114007",
+                "CodeDescription": "Inches (in)"
+            },
+            {
+                "Code": "3114009",
+                "CodeDescription": "International Units (IU)"
+            },
+            {
+                "Code": "3114011",
+                "CodeDescription": "Keep Vein Open (kvo)"
+            },
+            {
+                "Code": "3114013",
+                "CodeDescription": "Liters Per Minute (l/min [fluid])"
+            },
+            {
+                "Code": "3114015",
+                "CodeDescription": "Liters (l)"
+            },
+            {
+                "Code": "3114017",
+                "CodeDescription": "Liters Per Minute (LPM [gas])"
+            },
+            {
+                "Code": "3114019",
+                "CodeDescription": "Micrograms (mcg)"
+            },
+            {
+                "Code": "3114021",
+                "CodeDescription": "Micrograms per Kilogram per Minute (mcg/kg/min)"
+            },
+            {
+                "Code": "3114023",
+                "CodeDescription": "Micrograms per Minute (mcg/min)"
+            },
+            {
+                "Code": "3114025",
+                "CodeDescription": "Milliequivalents (mEq)"
+            },
+            {
+                "Code": "3114027",
+                "CodeDescription": "Metered Dose (MDI)"
+            },
+            {
+                "Code": "3114029",
+                "CodeDescription": "Milligrams (mg)"
+            },
+            {
+                "Code": "3114031",
+                "CodeDescription": "Milligrams per Kilogram (mg/kg)"
+            },
+            {
+                "Code": "3114033",
+                "CodeDescription": "Milligrams per Kilogram Per Minute (mg/kg/min)"
+            },
+            {
+                "Code": "3114035",
+                "CodeDescription": "Milligrams per Minute (mg/min)"
+            },
+            {
+                "Code": "3114037",
+                "CodeDescription": "Milliliters (ml)"
+            },
+            {
+                "Code": "3114039",
+                "CodeDescription": "Milliliters per Hour (ml/hr)"
+            },
+            {
+                "Code": "3114041",
+                "CodeDescription": "Other"
+            },
+            {
+                "Code": "3114043",
+                "CodeDescription": "Puffs"
+            },
+            {
+                "Code": "3114045",
+                "CodeDescription": "Units per Hour (units/hr)"
+            },
+            {
+                "Code": "3114047",
+                "CodeDescription": "Micrograms per Kilogram (mcg/kg)"
+            },
+            {
+                "Code": "3114049",
+                "CodeDescription": "Units"
+            },
+            {
+                "Code": "3114051",
+                "CodeDescription": "Units per Kilogram per Hour (units/kg/hr)"
+            },
+            {
+                "Code": "3114053",
+                "CodeDescription": "Units per Kilogram (units/kg)"
+            }
+        ]
+    },
+    "eHistory.15": {
+        "Definition": "The administration route (po, SQ, etc.) of the patient's current medication.",
+        "Code": [
+            {
+                "Code": "9927001",
+                "CodeDescription": "Blow-By"
+            },
+            {
+                "Code": "9927003",
+                "CodeDescription": "Buccal"
+            },
+            {
+                "Code": "9927005",
+                "CodeDescription": "Endotracheal Tube (ET)"
+            },
+            {
+                "Code": "9927007",
+                "CodeDescription": "Gastrostomy Tube"
+            },
+            {
+                "Code": "9927009",
+                "CodeDescription": "Inhalation"
+            },
+            {
+                "Code": "9927011",
+                "CodeDescription": "Intraarterial"
+            },
+            {
+                "Code": "9927013",
+                "CodeDescription": "Intradermal"
+            },
+            {
+                "Code": "9927015",
+                "CodeDescription": "Intramuscular (IM)"
+            },
+            {
+                "Code": "9927017",
+                "CodeDescription": "Intranasal"
+            },
+            {
+                "Code": "9927019",
+                "CodeDescription": "Intraocular"
+            },
+            {
+                "Code": "9927021",
+                "CodeDescription": "Intraosseous (IO)"
+            },
+            {
+                "Code": "9927023",
+                "CodeDescription": "Intravenous (IV)"
+            },
+            {
+                "Code": "9927025",
+                "CodeDescription": "Nasal Cannula"
+            },
+            {
+                "Code": "9927027",
+                "CodeDescription": "Nasogastric"
+            },
+            {
+                "Code": "9927029",
+                "CodeDescription": "Nasotracheal Tube"
+            },
+            {
+                "Code": "9927031",
+                "CodeDescription": "Non-Rebreather Mask"
+            },
+            {
+                "Code": "9927033",
+                "CodeDescription": "Ophthalmic"
+            },
+            {
+                "Code": "9927035",
+                "CodeDescription": "Oral"
+            },
+            {
+                "Code": "9927037",
+                "CodeDescription": "Other/miscellaneous"
+            },
+            {
+                "Code": "9927039",
+                "CodeDescription": "Otic"
+            },
+            {
+                "Code": "9927041",
+                "CodeDescription": "Re-breather mask"
+            },
+            {
+                "Code": "9927043",
+                "CodeDescription": "Rectal"
+            },
+            {
+                "Code": "9927045",
+                "CodeDescription": "Subcutaneous"
+            },
+            {
+                "Code": "9927047",
+                "CodeDescription": "Sublingual"
+            },
+            {
+                "Code": "9927049",
+                "CodeDescription": "Topical"
+            },
+            {
+                "Code": "9927051",
+                "CodeDescription": "Tracheostomy"
+            },
+            {
+                "Code": "9927053",
+                "CodeDescription": "Transdermal"
+            },
+            {
+                "Code": "9927055",
+                "CodeDescription": "Urethral"
+            },
+            {
+                "Code": "9927057",
+                "CodeDescription": "Ventimask"
+            },
+            {
+                "Code": "9927059",
+                "CodeDescription": "Wound"
+            },
+            {
+                "Code": "9927061",
+                "CodeDescription": "Portacath"
+            },
+            {
+                "Code": "9927063",
+                "CodeDescription": "Auto Injector"
+            },
+            {
+                "Code": "9927065",
+                "CodeDescription": "BVM"
+            },
+            {
+                "Code": "9927067",
+                "CodeDescription": "CPAP"
+            },
+            {
+                "Code": "9927069",
+                "CodeDescription": "IV Pump"
+            },
+            {
+                "Code": "9927071",
+                "CodeDescription": "Nebulizer"
+            },
+            {
+                "Code": "9927073",
+                "CodeDescription": "Umbilical Artery Catheter"
+            },
+            {
+                "Code": "9927075",
+                "CodeDescription": "Umbilical Venous Catheter"
+            }
+        ]
+    },
+    "eHistory.20": {
+        "Definition": "The frequency of administration of the patient's current medication.",
+        "Code": [
+            {
+                "Code": "3120001",
+                "CodeDescription": "qi (every hour)"
+            },
+            {
+                "Code": "3120003",
+                "CodeDescription": "q2h (every 2 hours)"
+            },
+            {
+                "Code": "3120005",
+                "CodeDescription": "q3h (every 3 hours)"
+            },
+            {
+                "Code": "3120007",
+                "CodeDescription": "q4h (every 4 hours)"
+            },
+            {
+                "Code": "3120009",
+                "CodeDescription": "qid (four times a day)"
+            },
+            {
+                "Code": "3120011",
+                "CodeDescription": "tad (three times a day)"
+            },
+            {
+                "Code": "3120013",
+                "CodeDescription": "ac (before meals)"
+            },
+            {
+                "Code": "3120015",
+                "CodeDescription": "pc (after meals)"
+            },
+            {
+                "Code": "3120017",
+                "CodeDescription": "bid (twice a day)"
+            },
+            {
+                "Code": "3120019",
+                "CodeDescription": "qd (every day)"
+            },
+            {
+                "Code": "3120021",
+                "CodeDescription": "qd-am (every day in the morning)"
+            },
+            {
+                "Code": "3120023",
+                "CodeDescription": "qd-pm (every day in the evening)"
+            },
+            {
+                "Code": "3120025",
+                "CodeDescription": "has (at bedtime)"
+            },
+            {
+                "Code": "3120027",
+                "CodeDescription": "sod (every other day)"
+            },
+            {
+                "Code": "3120029",
+                "CodeDescription": "prn (as needed)"
+            }
+        ]
+    },
+    "eHistory.16": {
+        "Definition": "Indication of the presence of the Emergency Information Form associated with patient's with special healthcare needs.",
+        "Code": [
+            {
+                "Code": "9923001",
+                "CodeDescription": "No"
+            },
+            {
+                "Code": "9923003",
+                "CodeDescription": "Yes"
+            }
+        ]
+    },
+    "eHistory.17": {
+        "Definition": "Indicators for the potential use of alcohol or drugs by the patient related to the patient's current illness or injury.",
+        "Code": [
+            {
+                "Code": "3117001",
+                "CodeDescription": "Alcohol Containers/Paraphernalia at Scene"
+            },
+            {
+                "Code": "3117003",
+                "CodeDescription": "Drug Paraphernalia at Scene"
+            },
+            {
+                "Code": "3117005",
+                "CodeDescription": "Patient Admits to Alcohol Use"
+            },
+            {
+                "Code": "3117007",
+                "CodeDescription": "Patient Admits to Drug Use"
+            },
+            {
+                "Code": "3117009",
+                "CodeDescription": "Positive Level known from Law Enforcement or Hospital Record"
+            },
+            {
+                "Code": "3117013",
+                "CodeDescription": "Physical Exam Indicates Suspected Alcohol or Drug Use"
+            }
+        ]
+    },
+    "eHistory.18": {
+        "Definition": "Indication of the possibility by the patient's history of current pregnancy.",
+        "Code": [
+            {
+                "Code": "3118001",
+                "CodeDescription": "No"
+            },
+            {
+                "Code": "3118003",
+                "CodeDescription": "Possible, Unconfirmed"
+            },
+            {
+                "Code": "3118005",
+                "CodeDescription": "Yes, Confirmed 12 to 20 Weeks"
+            },
+            {
+                "Code": "3118007",
+                "CodeDescription": "Yes, Confirmed Greater Than 20 Weeks"
+            },
+            {
+                "Code": "3118009",
+                "CodeDescription": "Yes, Confirmed Less Than 12 Weeks"
+            },
+            {
+                "Code": "3118011",
+                "CodeDescription": "Yes, Weeks Unknown"
+            }
+        ]
+    },
+    "eHistory.19": {
+        "Definition": "Date and Time of last oral intake.",
+        "Code": []
+    }
+}
