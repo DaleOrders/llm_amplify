@@ -25,7 +25,6 @@ ENV FLASK_APP=/app/server/app.py
 ENV FLASK_ENV=$ENVIRONMENT
 ENV FLASK_DEBUG=0
 
-
 # Run the Flask application
 CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
 
