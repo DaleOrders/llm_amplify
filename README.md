@@ -1,7 +1,7 @@
 # skribh-demo-web-app
 The locally-run web app used for product demonstration.
 
-## How to Run Locally
+## Run The App Locally
 
 ### Install python dependencies
 - `python -m venv .venv && source .venv/bin/activate`
@@ -41,3 +41,22 @@ For example, to run everything on port 8000:
         },
     },
     ```
+
+## Run the Flask backend in Docker
+
+### Build Skribh-api
+`docker build --build-arg ENVIRONMENT=development -t skribh-api .`
+
+### Run Skribh-api in Development Mode, and Map it to Port 5001:
+`docker run -e FLASK_DEBUG=1 -p 5001:5000 skribh-api`
+
+### Run Skribh-api Container in Debug and Automatically SSH into the Container:
+`docker run -it skribh-api /bin/sh`
+
+## Linting & Testing
+
+### Run PyLint from Project Root:
+`pylint .`
+
+### Running Test Coverage from from Project Root:
+`pytest --cov=server`
