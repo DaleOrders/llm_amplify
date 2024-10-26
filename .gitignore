@@ -1,4 +1,4 @@
-# keep audio folder but  else in audio
+# keep audio folder + README, but nothing else in audio/
 **/audio/*
 !**/audio/README.md
 
