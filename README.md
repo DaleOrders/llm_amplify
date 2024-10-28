@@ -19,10 +19,10 @@ The locally-run web app used for product demonstration.
 - `cd client && npm i`
 
 ### Run the Flask server (backend)
-- `cd server && flask run`
+- `cd server && flask run --debug -p 5001`
 
 ### Run the Vite server (React frontend)
-- `cd client && npm run dev`
+- In a separate terminal: `cd client && npm run dev`
 - Click the link outputted from this command to view the web app in a browser
 
 ### Troubleshooting
