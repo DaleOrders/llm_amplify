@@ -144,33 +144,48 @@ export default function MedCodeAssignmentView() {
                         // upload the file
                         const { form } = event.target
                         const formData = new FormData(form)
-                        const uploadResponse = await fetch('api/upload', {
-                            method: 'POST', body: formData
-                        })
-                        const { success, msg } = await uploadResponse.json()
-                        INSPECT(
-                            'server response: ' + msg,
-                            success ? 'success! ::' : 'failed ::'
-                        )
+                        try {
+                            const uploadResponse = await fetch('api/upload', {
+                                method: 'POST', body: formData
+                            })
+                            const { success, msg } = await uploadResponse.json()
+                            INSPECT(
+                                'server response: ' + msg,
+                                success ? 'success! ::' : 'failed ::'
+                            )
+                        } catch {
+                            const message =
+                                "Could not upload file. Please check your connection."
+                            setErrorMessage(message)
+                            console.log("ERROR:", message)
+                        }
 
                         // get the result,
                         // do not time out -- wait for the whole process 
                         // to complete on the server
-                        const resultResponse = await fetch('api/result')
-                        let {
-                            error,
-                            status,
-                            transcript,
-                            narrative,
-                            annotations,
-                        } = await resultResponse.json()
-                        if (error || status !== 'done') {
-                            const message = `Server Error: ${error}`
+                        try {
+                            const resultResponse = await fetch('api/result')
+                            let {
+                                error,
+                                transcript,
+                                narrative,
+                                annotations,
+                            } = await resultResponse.json()
+                            if (error) {
+                                const message = `Server Error: ${error}`
+                                setErrorMessage(message)
+                                console.log("ERROR:", message)
+                                return
+                            }
+                            setErrorMessage(null)
+                            setResults({ transcript, narrative, annotations })
+                        } catch {
+                            const message =
+                                "Could not make the result request. Please check your connection."
                             setErrorMessage(message)
+                            console.log("ERROR:", message)
                             return
                         }
-                        setErrorMessage(null)
-                        setResults({ transcript, narrative, annotations })
                     }}
                 >
                     Upload

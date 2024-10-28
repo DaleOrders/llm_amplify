@@ -9,14 +9,12 @@ from pathlib import Path
 
 import requests
 from requests.exceptions import (
-    RequestException,
     HTTPError,
     ConnectionError,
     Timeout,
-    RetryError,
 )
 from dotenv import load_dotenv
-from flask import Flask, Request, request
+from flask import Flask, request
 
 from kaju_module.openAI_flask import getTheStuffFromTheAI
 
@@ -71,13 +69,9 @@ def result():
     assert uploaded_audio_path and uploaded_audio_path.exists()
 
     audio_url = None
-    upload_resp_json = None
     try:
-        upload_resp_json = gladia_upload(uploaded_audio_path)
-        assert upload_resp_json
-        print("Upload response with File ID:", upload_resp_json)
-        audio_url = upload_resp_json.get("audio_url")
-        assert audio_url
+        audio_url = gladia_upload(uploaded_audio_path)
+        print(f"- Retrieved the audio url from Gladia:", audio_url)
     except Exception as e:
         msg = f"An error occurred when uploading the audio to Gladia: {e}"
         print(f"ERROR: {msg}")
@@ -90,13 +84,8 @@ def result():
 
     result_url = None
     try:
-        start_transcript_resp_json = gladia_start_transcript(
-            audio_url, transcript_headers
-        )
-        assert start_transcript_resp_json
-        print("Post Response:", start_transcript_resp_json)
-        result_url = start_transcript_resp_json.get("result_url")
-        assert result_url
+        result_url = gladia_start_transcript(audio_url, transcript_headers)
+        print(f"- Received the result URL from Gladia:", result_url)
     except Exception as e:
         msg = f"An error occurred when initializing the transcript with Gladia: {e}" 
         print(f"ERROR: {msg}")
@@ -105,22 +94,19 @@ def result():
     gladia_result = None
     try:
         gladia_result = gladia_poll_for_result(result_url, transcript_headers)
+        print("- Received transcription from Gladia:", gladia_result)
     except Exception as e:
-        msg = f"An error occurred when polling Gladia for the completed transcription."
+        msg = f"An error occurred when polling Gladia for the completed transcription: {e}"
         print(f"ERROR: {msg}")
         return {"error": msg}
 
-    print("Transcription result:", gladia_result)
-
-    # IAN: handle error -- if not result: ...
     transcript = gladia_result["transcription"]["full_transcript"]
+
     annotations, narrative = getTheStuffFromTheAI(transcript)
 
-    print("- End of work")
+    print("- Finished processing transcript")
 
     return {
-        "error": None,
-        "status": "done",
         "transcript": transcript,
         "annotations": annotations,
         "narrative": narrative,
@@ -155,7 +141,8 @@ def gladia_upload(uploaded_audio_path):
             )
             response.raise_for_status()  # raise if bad status code
             resp_json = response.json()
-            return resp_json
+            assert (audio_url := resp_json.get("audio_url"))
+            return audio_url
         except (Timeout, ConnectionError) as e:
             print(e)
             sleep(2)
@@ -166,7 +153,7 @@ def gladia_upload(uploaded_audio_path):
         except Exception as e:
             # what other kinds of errors can be thrown?
             raise e
-    raise RetryError
+    raise Timeout
 
 
 def gladia_start_transcript(audio_url, transcript_headers):
@@ -187,7 +174,8 @@ def gladia_start_transcript(audio_url, transcript_headers):
             )
             response.raise_for_status()
             resp_json = response.json()
-            return resp_json
+            assert (result_url := resp_json.get("result_url"))
+            return result_url
         except (Timeout, ConnectionError) as e:
             print(e)
             sleep(2)
@@ -198,7 +186,7 @@ def gladia_start_transcript(audio_url, transcript_headers):
         except Exception as e:
             # what other kinds of errors can be thrown?
             raise e
-    raise RetryError
+    raise Timeout
 
 
 def gladia_poll_for_result(result_url, transcript_headers):
@@ -221,8 +209,8 @@ def gladia_poll_for_result(result_url, transcript_headers):
                 sleep(SLEEP_SEC)
                 continue
             if status == "done":
-                print("- Transcription done: \n")
-                return resp_json.get("result")
+                assert (result := resp_json.get("result"))
+                return result
             if status == "error":
                 # TODO: retry on status: error? if so, use a separate retry count
                 raise Exception(f"Gladia returned 'status: error'. Response: {resp_json}.")
@@ -237,7 +225,7 @@ def gladia_poll_for_result(result_url, transcript_headers):
         except Exception as e:
             # what other kinds of errors can be thrown?
             raise e
-    raise RetryError
+    raise Timeout
 
 
 if __name__ == "__main__":
