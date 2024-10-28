@@ -24,6 +24,7 @@ const {
 
 export default function MedCodeAssignmentView() {
     const [$result, setResults] = useState(null)
+    const [$errorMessage, setErrorMessage] = useState(null)
 
     const [$clickedWordId, setClickedWordId] = useState(null)
     const [$selectionBoundsIds, setSelectionBoundsIds] = useState([])
@@ -157,16 +158,18 @@ export default function MedCodeAssignmentView() {
                         // to complete on the server
                         const resultResponse = await fetch('api/result')
                         let {
+                            error,
                             status,
                             transcript,
                             narrative,
                             annotations,
                         } = await resultResponse.json()
-                        if (status !== 'done') {
-                            throw new Error(
-                                "Expected a 'status: done' response from '/result'."
-                            )
+                        if (error || status !== 'done') {
+                            const message = `Server Error: ${error}`
+                            setErrorMessage(message)
+                            return
                         }
+                        setErrorMessage(null)
                         setResults({ transcript, narrative, annotations })
                     }}
                 >
@@ -208,7 +211,7 @@ export default function MedCodeAssignmentView() {
             >
                 {!$result?.transcript?.wordsArray
                     ? <div>
-                        Awaiting results from the Skribh AI...
+                        {$errorMessage || "Awaiting results from the Skribh AI..."}
                     </div>
                     : $result.transcript.wordsArray.map(word => (
                         <Word
