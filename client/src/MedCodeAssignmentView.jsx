@@ -24,7 +24,9 @@ const {
 
 export default function MedCodeAssignmentView() {
     const [$result, setResults] = useState(null)
-    const [$errorMessage, setErrorMessage] = useState(null)
+    const [$statusMessage, setStatusMessage] = useState(
+        "Press Record. When done, press Stop to upload your recording."
+    )
 
     const [$clickedWordId, setClickedWordId] = useState(null)
     const [$selectionBoundsIds, setSelectionBoundsIds] = useState([])
@@ -137,56 +139,7 @@ export default function MedCodeAssignmentView() {
                 <button
                     id="upload-button"
                     className={"btn btn-success"}
-                    onClick={async (event) => {
-                        event.preventDefault()
-                        if (isFileInputEmpty()) return
-
-                        // upload the file
-                        const { form } = event.target
-                        const formData = new FormData(form)
-                        try {
-                            const uploadResponse = await fetch('api/upload', {
-                                method: 'POST', body: formData
-                            })
-                            const { success, msg } = await uploadResponse.json()
-                            INSPECT(
-                                'server response: ' + msg,
-                                success ? 'success! ::' : 'failed ::'
-                            )
-                        } catch {
-                            const message =
-                                "Could not upload file. Please check your connection."
-                            setErrorMessage(message)
-                            console.log("ERROR:", message)
-                        }
-
-                        // get the result,
-                        // do not time out -- wait for the whole process 
-                        // to complete on the server
-                        try {
-                            const resultResponse = await fetch('api/result')
-                            let {
-                                error,
-                                transcript,
-                                narrative,
-                                annotations,
-                            } = await resultResponse.json()
-                            if (error) {
-                                const message = `Server Error: ${error}`
-                                setErrorMessage(message)
-                                console.log("ERROR:", message)
-                                return
-                            }
-                            setErrorMessage(null)
-                            setResults({ transcript, narrative, annotations })
-                        } catch {
-                            const message =
-                                "Could not make the result request. Please check your connection."
-                            setErrorMessage(message)
-                            console.log("ERROR:", message)
-                            return
-                        }
-                    }}
+                    onClick={async (event) => do_the_thing(event)}
                 >
                     Upload
                 </button>
@@ -226,7 +179,7 @@ export default function MedCodeAssignmentView() {
             >
                 {!$result?.transcript?.wordsArray
                     ? <div>
-                        {$errorMessage || "Awaiting results from the Skribh AI..."}
+                        {$statusMessage}
                     </div>
                     : $result.transcript.wordsArray.map(word => (
                         <Word
@@ -358,6 +311,66 @@ export default function MedCodeAssignmentView() {
                 </button>} */}
         </div>
     )
+
+    async function do_the_thing(event) {
+        event.preventDefault()
+        if (isFileInputEmpty()) return
+
+        // upload the file
+        const { form } = event.target
+        let statusMessage = null
+        const formData = new FormData(form)
+        try {
+            const uploadResponse = await fetch('api/upload', {
+                method: 'POST', body: formData
+            })
+            let { success, msg } = await uploadResponse.json()
+            statusMessage = `${success ? 'Success!' : 'Failed.'} ${msg}`
+            // TODO: if not success, try a few more times
+            setStatusMessage(statusMessage)
+            await updateUI()
+            console.log(statusMessage)
+        } catch (e) {
+            const message =
+                `Could not upload file. Please check your connection.\
+                Error: ${e}`
+            setStatusMessage(message)
+            console.log("ERROR:", message)
+            return
+        }
+
+        // get the result,
+        // do not time out -- wait for the whole process 
+        // to complete on the server
+
+        statusMessage = statusMessage + '\nRequesting results...'
+        setStatusMessage(statusMessage)
+        await updateUI()
+        try {
+            const resultResponse = await fetch('api/result')
+            let {
+                error,
+                transcript,
+                narrative,
+                annotations,
+            } = await resultResponse.json()
+            if (error) {
+                const message = `Server Error: ${error}`
+                setStatusMessage(message)
+                console.log("ERROR:", message)
+                return
+            }
+            setStatusMessage(null)
+            setResults({ transcript, narrative, annotations })
+        } catch (e) {
+            const message =
+                `Could not make the result request. \
+                Please check your connection. Error: ${e}`
+            setStatusMessage(message)
+            console.log("ERROR:", message)
+            return
+        }
+    }
 
     function isFileInputEmpty() {
         return !document.getElementById('audio-file')?.files.length ?? true
@@ -508,6 +521,10 @@ const Word = memo(_Word, (prevProps, nextProps) => (
     prevProps.selected === nextProps.selected
     && prevProps.consumed === nextProps.consumed
 ))
+
+async function updateUI() {
+    await new Promise(resolve => setTimeout(resolve, 0))
+}
 
 function _Word({
     value,

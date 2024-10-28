@@ -26,9 +26,6 @@ app.config["GLADIA_API_KEY"] = os.getenv("GLADIA_API_KEY")
 BASE_DIR = Path(__file__).parent
 AUDIO_DIR = BASE_DIR / "audio"
 
-# keep audio file path as Path object
-app.config["uploaded_audio_path"] = None
-
 
 @app.post("/upload")
 def upload():
@@ -43,8 +40,7 @@ def upload():
         }
 
     file = request.files["audio-file"]
-    uploaded_audio_path = AUDIO_DIR / (file.filename or "audio_file.webm")
-    app.config["uploaded_audio_path"] = uploaded_audio_path
+    uploaded_audio_path = AUDIO_DIR / (file.filename or "audio_file.mp3")
     file.save(uploaded_audio_path)
 
     if not uploaded_audio_path.exists():
@@ -53,7 +49,17 @@ def upload():
             "msg": "There was a problem saving the file to the server. Try uploading again.",
         }
 
-    return {"success": True, "msg": f"Received upload of file: '{file.filename}'."}
+    audio_url = None
+    try:
+        audio_url = gladia_upload(uploaded_audio_path)
+        print(f"- Retrieved the audio url from Gladia:", audio_url)
+        app.config["uploaded_audio_url"] = audio_url
+    except Exception as e:
+        msg = f"An error occurred when uploading the audio to Gladia: {e}"
+        print(f"ERROR: {msg}")
+        return {"success": False, "msg": msg}
+
+    return {"success": True, "msg": f"Uploaded '{file.filename}' for transcription."}
 
 
 @app.route("/result")
@@ -65,32 +71,21 @@ def result():
     Annotations and Narrative.
     """
 
-    uploaded_audio_path = app.config["uploaded_audio_path"]
-    assert uploaded_audio_path and uploaded_audio_path.exists()
-
-    audio_url = None
-    try:
-        audio_url = gladia_upload(uploaded_audio_path)
-        print(f"- Retrieved the audio url from Gladia:", audio_url)
-    except Exception as e:
-        msg = f"An error occurred when uploading the audio to Gladia: {e}"
-        print(f"ERROR: {msg}")
-        return {"error": msg}
-
     transcript_headers = {
         "x-gladia-key": app.config["GLADIA_API_KEY"],
         "Content-Type": "application/json",
     }
 
+    audio_url = app.config["uploaded_audio_url"]
     result_url = None
     try:
         result_url = gladia_start_transcript(audio_url, transcript_headers)
         print(f"- Received the result URL from Gladia:", result_url)
     except Exception as e:
-        msg = f"An error occurred when initializing the transcript with Gladia: {e}" 
+        msg = f"An error occurred when initializing the transcript with Gladia: {e}"
         print(f"ERROR: {msg}")
         return {"error": msg}
-    
+
     gladia_result = None
     try:
         gladia_result = gladia_poll_for_result(result_url, transcript_headers)
@@ -114,6 +109,9 @@ def result():
 
 
 def gladia_upload(uploaded_audio_path):
+    '''
+    Upload an audio file to Gladia and return its URL from Gladia
+    '''
     print("- Uploading file to Gladia...")
     headers = {
         "x-gladia-key": app.config["GLADIA_API_KEY"],
@@ -157,6 +155,10 @@ def gladia_upload(uploaded_audio_path):
 
 
 def gladia_start_transcript(audio_url, transcript_headers):
+    '''
+    Start the transcription process with Gladia and return the callback URL for
+    the result
+    '''
     print("- Initializing Gladia transcription...")
     req_json = {
         "audio_url": audio_url,
@@ -190,6 +192,9 @@ def gladia_start_transcript(audio_url, transcript_headers):
 
 
 def gladia_poll_for_result(result_url, transcript_headers):
+    '''
+    Poll Gladia's result url for the transcription result and return the result
+    '''
     print("- Polling for results...")
     SLEEP_SEC = 2
     TIMEOUT_SEC = 180  # try for about 3 minutes (longer if retry on status: error)
@@ -213,7 +218,9 @@ def gladia_poll_for_result(result_url, transcript_headers):
                 return result
             if status == "error":
                 # TODO: retry on status: error? if so, use a separate retry count
-                raise Exception(f"Gladia returned 'status: error'. Response: {resp_json}.")
+                raise Exception(
+                    f"Gladia returned 'status: error'. Response: {resp_json}."
+                )
         except (Timeout, ConnectionError) as e:
             print(e)
             print("- Retrying...")
@@ -230,22 +237,3 @@ def gladia_poll_for_result(result_url, transcript_headers):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)
-
-
-"""
-Under what conditions will each request fail?
-
-UPLOAD
-    - timeout - try again
-    - no api key / bad url
-
-START TRANSCRIPT
-    - timeout - try again
-    - audio file corrupted at any point in the flow
-    - no api key / bad url
-
-POLL FOR RESULT
-    - timeout - try again
-    - no api key / bad url
-
-"""
