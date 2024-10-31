@@ -139,7 +139,7 @@ export default function MedCodeAssignmentView() {
                 <button
                     id="upload-button"
                     className={"btn btn-success"}
-                    onClick={async (event) => do_the_thing(event)}
+                    onClick={async (event) => uploadAndGetResults(event)}
                 >
                     Upload
                 </button>
@@ -312,7 +312,7 @@ export default function MedCodeAssignmentView() {
         </div>
     )
 
-    async function do_the_thing(event) {
+    async function uploadAndGetResults(event) {
         event.preventDefault()
         if (isFileInputEmpty()) return
 
