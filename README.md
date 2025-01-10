@@ -3,27 +3,34 @@ The locally-run web app used for product demonstration.
 
 ## Run The App Locally
 
-### Install python dependencies
-- `python -m venv .venv && source .venv/bin/activate`
-- Confirm that the environment has been activated
-    - Run `which python`.
-        - If this outputs something like 'aliased to Python3.11', run `which Python3.11`. You should see output with ending similar to '...skribh-demo-web-app/.venv/bin/python3.11'
-- `pip install -r requirements.txt`
-- Confirm that VSCode has figured out that it should use the python interpreter from the venv
-    - cmd+shift+p (or Windows equivalent) to show command palate
-    - Select 'Python: Select Interpreter'
-    - Make sure the interpreter in the venv just created is the selected option (VSCode sometimes does not detect the activated venv)
-        - Select something like 'Python3 3.11.10 ('.venv': venv) ./.venv/bin/python'
+The following commands need to be run in the root folder.
 
-### Install React dependencies
-- `cd client && npm i`
+### Run the backend
+- Run `make backend`
 
-### Run the Flask server (backend)
-- `cd server && flask run --debug -p 5001`
+### Run the frontend
+- In a new terminal run `make frontend`
 
-### Run the Vite server (React frontend)
-- In a separate terminal: `cd client && npm run dev`
-- Click the link outputted from this command to view the web app in a browser
+The local host adress will appear in the terminal. It will take the form http://localhost:<port>.
+![alt text](image.png)
+
+Copy it and paste it into your browser to open the app.
+
+## Run the Flask backend in Docker
+
+### Run Skribh-api in Development Mode, and Map it to Port 5001:
+- Run `make docker-backend`
+
+### Run Skribh-api Container in Debug and Automatically SSH into the Container:
+- Run `make ssh`
+
+## Linting & Testing
+
+### Run PyLint from Project Root:
+- Run `make lint`
+
+### Running Test Coverage from from Project Root:
+- Run `make test`
 
 ### Troubleshooting
 The Vite dev server proxies requests to 'api/' to the same port as the Flask server at route '/'. By default, the Flask server runs on port 5000, which may have conflicts on some systems.
@@ -41,22 +48,3 @@ For example, to run everything on port 8000:
         },
     },
     ```
-
-## Run the Flask backend in Docker
-
-### Build Skribh-api
-`docker build --build-arg ENVIRONMENT=development -t skribh-api .`
-
-### Run Skribh-api in Development Mode, and Map it to Port 5001:
-`docker run -e FLASK_DEBUG=1 -p 5001:5000 skribh-api`
-
-### Run Skribh-api Container in Debug and Automatically SSH into the Container:
-`docker run -it skribh-api /bin/sh`
-
-## Linting & Testing
-
-### Run PyLint from Project Root:
-`pylint .`
-
-### Running Test Coverage from from Project Root:
-`pytest --cov=server`
